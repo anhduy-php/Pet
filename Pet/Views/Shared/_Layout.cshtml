@@ -7,14 +7,14 @@
     <meta http-equiv="refresh" content="3600">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
-    <link href="image/icon/icon-logo.png" rel="shortcut icon" />
+    <link href="~/image/icon/icon-logo.png" rel="shortcut icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="javascript/style_javascript.js"></script>
-
+    <script src="~/javascript/style_javascript.js"></script>
+    <link href="@ViewData["cssIndex"]" rel="stylesheet" />
 
     
 </head>
@@ -24,29 +24,29 @@
     <header>
         <div class="title">
             <div class="col30">
-                <img src="image/icon/icon-logo.png" alt="WelovePets" />
+                <img src="~/image/icon/icon-logo.png" alt="WelovePets" />
             </div>
             <div class="col40">
                 <div class="search">
                     <input type="search" placeholder="Search" />
-                    <input type="image" value="timkiem" src="image/icon/search-icon.png" />
+                    <input type="image" value="timkiem" src="~/image/icon/search-icon.png" />
                 </div>
             </div>
             <div class="col10 header-icon">
                 <a id="Support" href="/contact">
-                    <img src="image/icon/hotro-icon.png" alt="Support">
+                    <img src="~/image/icon/hotro-icon.png" alt="Support">
                     <span>Support</span>
                 </a>
             </div>
             <div class="col10 header-icon">
                 <a href="#">
-                    <img src="image/icon/giohang-icon.png" alt="cart">
+                    <img src="~/image/icon/giohang-icon.png" alt="cart">
                     <span>cart</span>
                 </a>
             </div>
             <div class="col10 header-icon">
                 <a href="/login">
-                    <img src="image/icon/dangnhap-icon.png" alt="login">
+                    <img src="~/image/icon/dangnhap-icon.png" alt="login">
                     <span>login</span>
                 </a>
             </div>
@@ -57,13 +57,13 @@
         <ul class="menu">
             <li>
                 <a href="/">
-                    <img src="image/icon/home-icon.png" alt="Home">
+                    <img src="~/image/icon/home-icon.png" alt="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a href="/dogbreed">
-                    <img src="image/icon/giongcho-icon.png" alt="giong cho">
+                    <img src="~/image/icon/giongcho-icon.png" alt="giong cho">
                     <span>Dog breed</span>
 
                 </a>
@@ -166,7 +166,7 @@
             </li>
             <li>
                 <a href="/puppy">
-                    <img src="image/icon/cuncon-icon.png" alt="puppy">
+                    <img src="~/image/icon/cuncon-icon.png" alt="puppy">
                     <span>Puppy</span>
                 </a>
                 <ul class="sub-menu">
@@ -302,7 +302,7 @@
             </li>
             <li>
                 <a href="/accessory">
-                    <img src="image/icon/phukien-icon.png" alt="accessory">
+                    <img src="~/image/icon/phukien-icon.png" alt="accessory">
                     <span>Accessory</span>
                 </a>
                 <ul class="sub-menu">
@@ -327,25 +327,25 @@
             </li>
             <li>
                 <a href="/raise">
-                    <img src="image/icon/cachnuoi-icon.png" alt="how to raise">
+                    <img src="~/image/icon/cachnuoi-icon.png" alt="how to raise">
                     <span>How to raise</span>
                 </a>
             </li>
             <li>
                 <a href="/service">
-                    <img src="image/icon/dichvu-icon.png" alt="service">
+                    <img src="~/image/icon/dichvu-icon.png" alt="service">
                     <span>Service</span>
                 </a>
             </li>
             <li>
                 <a href="/introduce">
-                    <img src="image/icon/gioithieu-icon.png" alt="Introduce">
+                    <img src="~/image/icon/gioithieu-icon.png" alt="Introduce">
                     <span>Introduce</span>
                 </a>
             </li>
             <li>
                 <a href="/contact">
-                    <img src="image/icon/lienhe-icon.png" alt="Contact">
+                    <img src="~/image/icon/lienhe-icon.png" alt="Contact">
                     <span>Contact</span>
                 </a>
             </li>
@@ -361,7 +361,7 @@
     <footer>
         <div class="footer">
             <div class="col40 freeship">
-                <div><img src="image/icon/icon-shipping.png" alt="shipping" /></div>
+                <div><img src="~/image/icon/icon-shipping.png" alt="shipping" /></div>
                 <div>Free delivery in Ho Chi Minh City and Ca Mau City, Apply for orders from 500,000 VND or more</div>
             </div>
 
@@ -374,10 +374,10 @@
                     <li><a href="/introduce">Branch</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li>
-                        <a target="_blank" href="http://online.gov.vn/"><img src="image/icon/icon-bocongthuong.png" alt="bộ công thương"></a>
+                        <a target="_blank" href="http://online.gov.vn/"><img src="~/image/icon/icon-bocongthuong.png" alt="bộ công thương"></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=1bf3f65e-4ac8-457e-8400-9d299263f727"><img src="image/icon/_dmca_premi_badge_7.png" alt="chứng nhận"></a>
+                        <a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=1bf3f65e-4ac8-457e-8400-9d299263f727"><img src="~/image/icon/_dmca_premi_badge_7.png" alt="chứng nhận"></a>
                     </li>
                 </ul>
             </div>
