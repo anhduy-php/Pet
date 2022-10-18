@@ -8,5 +8,8 @@ namespace Database.Entities
         public string LastName { set; get; }
         public DateTime DoB { set; get; }
         public bool isDelete { set; get; }
+
+        public List<UserContact> userContact { get; set; }
+        public List<IntroducePage> introducePage { get; set; }
     }
 }
