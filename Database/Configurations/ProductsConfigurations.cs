@@ -12,7 +12,7 @@ namespace Database.Configurations
             builder.HasKey(t => new { t.product_Id });
 
             builder.HasOne(t => t.productCategories).WithMany(ur => ur.products)
-.HasForeignKey(pc => pc.product_CategoryId);
+            .HasForeignKey(pc => pc.product_CategoryId);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Database.Configurations
 
 
             builder.HasOne(t => t.petCategories).WithMany(ur => ur.pets)
-.HasForeignKey(pc => pc.pet_CategoryId);
+            .HasForeignKey(pc => pc.pet_CategoryId);
         }
     }
 }

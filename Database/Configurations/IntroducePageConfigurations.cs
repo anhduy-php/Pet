@@ -12,7 +12,7 @@ namespace Database.Configurations
             builder.HasKey(t => new { t.introduce_Id });
 
             builder.HasOne(t => t.users).WithMany(ur => ur.introducePage)
-.HasForeignKey(pc => pc.introduce_UserCreate);
+            .HasForeignKey(pc => pc.introduce_UserCreate);
         }
     }
 }

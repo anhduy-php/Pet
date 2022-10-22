@@ -13,7 +13,7 @@ namespace Database.Configurations
 
 
             builder.HasOne(t => t.users).WithMany(ur => ur.userContact)
-.HasForeignKey(pc => pc.uc_UserCreate);
+            .HasForeignKey(pc => pc.uc_UserCreate);
         }
     }
 }
