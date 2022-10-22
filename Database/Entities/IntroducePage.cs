@@ -2,6 +2,7 @@
 {
     public class IntroducePage
     {
+        
         public string introduce_Id { get; set; }
         public string introduce_Zalo { get; set; }
         public string introduce_Phone { get; set; }

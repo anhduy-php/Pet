@@ -4,6 +4,7 @@ using Database.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221022175604_create")]
+    partial class create
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,13 +57,13 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            bill_Id = "858d5e10-4b2a-4be5-aded-c85860cbbe4e",
+                            bill_Id = "9d0933e3-f9db-4a38-b6d4-b5a6b8935c88",
                             bill_Cancel = false,
-                            bill_StartDateTime = new DateTime(2022, 10, 23, 0, 57, 13, 603, DateTimeKind.Local).AddTicks(3918),
+                            bill_StartDateTime = new DateTime(2022, 10, 23, 0, 56, 3, 900, DateTimeKind.Local).AddTicks(3813),
                             bill_StatusPayment = true,
                             bill_StatusReviceOrder = false,
                             bill_Total = 1000000.0,
-                            bill_UserId = "7e7fd7d1-aaad-4a7d-b3a0-ef85c22f9fd8"
+                            bill_UserId = "8b3e6a69-6154-4a41-98c8-327dbfbf5ef8"
                         });
                 });
 
@@ -128,7 +130,7 @@ namespace Database.Migrations
                             introduce_Map2 = "464 Cong Hoa, Ward 13, Tan Binh District, City Ho Chi Minh.",
                             introduce_Map3 = "157/13 Luong The Vinh Street, Ward 1, City Ca Mau.",
                             introduce_Phone = "0812888858",
-                            introduce_UserCreate = "7e7fd7d1-aaad-4a7d-b3a0-ef85c22f9fd8",
+                            introduce_UserCreate = "8b3e6a69-6154-4a41-98c8-327dbfbf5ef8",
                             introduce_Zalo = "0812888858"
                         });
                 });
@@ -156,224 +158,224 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            pc_Id = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pc_Id = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pc_Description = "Ikita Inu",
                             pc_IsDelete = false,
                             pc_Name = "Ikita Inu"
                         },
                         new
                         {
-                            pc_Id = "92d83a67-c641-4cf0-8e80-e7cd442417ca",
+                            pc_Id = "dc5da4e8-008d-4f6a-85f3-d1e4a24fecfd",
                             pc_Description = "Alaska",
                             pc_IsDelete = false,
                             pc_Name = "Alaska"
                         },
                         new
                         {
-                            pc_Id = "0764775f-f241-4a50-83aa-e55078499b3d",
+                            pc_Id = "5546cb37-d084-4afb-ba89-89bd52b192d3",
                             pc_Description = "Vitespitz",
                             pc_IsDelete = false,
                             pc_Name = "Vitespitz"
                         },
                         new
                         {
-                            pc_Id = "fcf83541-caaa-4274-8a0b-0bcbe34a006d",
+                            pc_Id = "5f3a507a-c641-47cf-8b63-fb1777f5f10f",
                             pc_Description = "Pekingese",
                             pc_IsDelete = false,
                             pc_Name = "Pekingese"
                         },
                         new
                         {
-                            pc_Id = "2531e3d7-c1ff-4cae-8ac9-c458e34fb528",
+                            pc_Id = "19f5639e-c952-483c-ab48-e187f4501fa0",
                             pc_Description = "Becgie Germany",
                             pc_IsDelete = false,
                             pc_Name = "Becgie Germany"
                         },
                         new
                         {
-                            pc_Id = "cb376c55-cded-41f4-9227-83c4d9adbc43",
+                            pc_Id = "25dff836-f046-4bbd-857d-0632bc47b03c",
                             pc_Description = "Border collie",
                             pc_IsDelete = false,
                             pc_Name = "Border collie"
                         },
                         new
                         {
-                            pc_Id = "a656c6e8-8eb2-4754-8b14-3ee22d1b6a32",
+                            pc_Id = "d9b7e433-6eac-496e-aae0-e6cc52d10345",
                             pc_Description = "Bulldog",
                             pc_IsDelete = false,
                             pc_Name = "Bulldog"
                         },
                         new
                         {
-                            pc_Id = "3b4b208d-cea5-4f9b-9b53-bf02fbad2f0b",
+                            pc_Id = "099765d7-e234-420a-8d29-f395c112bfec",
                             pc_Description = "Bully American",
                             pc_IsDelete = false,
                             pc_Name = "Bully American"
                         },
                         new
                         {
-                            pc_Id = "51024d9e-93bb-4482-980d-f44ade3ff2ee",
+                            pc_Id = "ad6a9e3b-2dc9-4ed9-a5c2-1f5649e442a7",
                             pc_Description = "Chihuahua",
                             pc_IsDelete = false,
                             pc_Name = "Chihuahua"
                         },
                         new
                         {
-                            pc_Id = "d57adcc8-882e-4373-9f8b-8e61b8a88171",
+                            pc_Id = "d1d05b94-ba26-4a62-b262-b3d6a383d4f1",
                             pc_Description = "Dalmatian",
                             pc_IsDelete = false,
                             pc_Name = "Dalmatian"
                         },
                         new
                         {
-                            pc_Id = "f02dac93-6594-45c2-8ec7-071240ba9be8",
+                            pc_Id = "a533a2ac-1c8a-4d7a-b15b-45485724c917",
                             pc_Description = "Japan Dog",
                             pc_IsDelete = false,
                             pc_Name = "Japan Dog"
                         },
                         new
                         {
-                            pc_Id = "cfb3205b-dfc3-4721-97c2-8765b07599df",
+                            pc_Id = "da2ce7a5-1f08-4215-9680-0c7dca51ae24",
                             pc_Description = "Chow Chow",
                             pc_IsDelete = false,
                             pc_Name = "Chow Chow"
                         },
                         new
                         {
-                            pc_Id = "3c8f8595-b5e8-4150-a9bc-c644236a4e6e",
+                            pc_Id = "5685b4c8-5828-4093-bf36-f7208e970ff9",
                             pc_Description = "Cocker Spaniel",
                             pc_IsDelete = false,
                             pc_Name = "Cocker Spaniel"
                         },
                         new
                         {
-                            pc_Id = "e21879bf-597e-4a97-8bd4-55f4f3158bc3",
+                            pc_Id = "ca49f1b8-5351-4220-af91-4765cca8cbbb",
                             pc_Description = "Corgi",
                             pc_IsDelete = false,
                             pc_Name = "Corgi"
                         },
                         new
                         {
-                            pc_Id = "e2d550e5-3a2a-46f0-912d-050d74e2686d",
+                            pc_Id = "aec76309-5516-479e-a8ee-34fcf2d90bbc",
                             pc_Description = "Dobermann",
                             pc_IsDelete = false,
                             pc_Name = "Dobermann"
                         },
                         new
                         {
-                            pc_Id = "8a7723a5-8878-45ee-899d-b81dfb31e680",
+                            pc_Id = "39e83b15-2491-4809-adfe-74ac2a47f898",
                             pc_Description = "Golden Retriever",
                             pc_IsDelete = false,
                             pc_Name = "Golden Retriever"
                         },
                         new
                         {
-                            pc_Id = "45bb7b68-1f38-42c3-bd72-ca9447335776",
+                            pc_Id = "7e785ec4-8e30-4b7e-8fba-450e48f030ac",
                             pc_Description = "Great Dane",
                             pc_IsDelete = false,
                             pc_Name = "Great Dane"
                         },
                         new
                         {
-                            pc_Id = "0880194f-4689-4329-872e-c80d1479476c",
+                            pc_Id = "67bd9ef9-c200-4bec-89db-61a37ded4f80",
                             pc_Description = "H'Mong Coc",
                             pc_IsDelete = false,
                             pc_Name = "H'Mong Coc"
                         },
                         new
                         {
-                            pc_Id = "9253bd23-e2d0-467a-be68-0b505375ebb4",
+                            pc_Id = "02986abe-8aaa-498c-b942-8a0fcaf16af1",
                             pc_Description = "Husky",
                             pc_IsDelete = false,
                             pc_Name = "Husky"
                         },
                         new
                         {
-                            pc_Id = "06e06496-6539-437b-8e5d-4e38099453e5",
+                            pc_Id = "8c253cca-7e46-4102-8304-db9370ae3b60",
                             pc_Description = "Labrador",
                             pc_IsDelete = false,
                             pc_Name = "Labrador"
                         },
                         new
                         {
-                            pc_Id = "dd314793-94b4-4a29-9d5f-128545fa5947",
+                            pc_Id = "5d7e5f3e-00c2-46c9-9a37-9bd0100f1b53",
                             pc_Description = "Sausage",
                             pc_IsDelete = false,
                             pc_Name = "Sausage"
                         },
                         new
                         {
-                            pc_Id = "6909c5f3-cf64-458e-bde1-0066fec65e62",
+                            pc_Id = "313cc446-898f-4476-9c7e-8b0d65a7610a",
                             pc_Description = "Malinois",
                             pc_IsDelete = false,
                             pc_Name = "Malinois"
                         },
                         new
                         {
-                            pc_Id = "2d7bcbbd-673d-4523-bdb3-d20f853831b3",
+                            pc_Id = "5e4bdbbb-b1c2-437c-b781-c682b35f66bb",
                             pc_Description = "Tibetan Clams",
                             pc_IsDelete = false,
                             pc_Name = "Tibetan Clams"
                         },
                         new
                         {
-                            pc_Id = "73b7270f-c043-430c-bb02-b0114bb4c9b7",
+                            pc_Id = "b38071da-10aa-4be9-b8ed-ec056cfa0866",
                             pc_Description = "Pho Deer",
                             pc_IsDelete = false,
                             pc_Name = "Pho Deer"
                         },
                         new
                         {
-                            pc_Id = "908b818c-10bd-45ee-8b7a-57042a6c4117",
+                            pc_Id = "76f94dba-7cfc-4500-9da4-1df7e2026cb3",
                             pc_Description = "Phoc Soc",
                             pc_IsDelete = false,
                             pc_Name = "Phoc Soc"
                         },
                         new
                         {
-                            pc_Id = "1b92ba8d-51f5-441d-a03e-6ea48cb9a4c4",
+                            pc_Id = "704d453c-3a33-4094-a195-ed83e70ee8b5",
                             pc_Description = "Phu Quoc",
                             pc_IsDelete = false,
                             pc_Name = "Phu Quoc"
                         },
                         new
                         {
-                            pc_Id = "201ff47d-705d-4c15-b93c-3829cc523de2",
+                            pc_Id = "b02b08bf-f4f6-4e5b-99a3-6a6e23370b74",
                             pc_Description = "Pitbull",
                             pc_IsDelete = false,
                             pc_Name = "Pitbull"
                         },
                         new
                         {
-                            pc_Id = "6b9f5eaf-bbd6-44e8-babd-794d163f3cce",
+                            pc_Id = "940aface-2c15-466f-a341-25f8582c8b2f",
                             pc_Description = "Poodle",
                             pc_IsDelete = false,
                             pc_Name = "Poodle"
                         },
                         new
                         {
-                            pc_Id = "0838361b-44ac-447c-9f53-ef18c439d97f",
+                            pc_Id = "23d8f287-0f82-4e71-9204-a7007306af21",
                             pc_Description = "Pug",
                             pc_IsDelete = false,
                             pc_Name = "Pug"
                         },
                         new
                         {
-                            pc_Id = "62e08bb8-882f-477b-ae8d-2fe6fff1c4ed",
+                            pc_Id = "6e6a85e7-ec28-47a2-bfec-6f4764bfc125",
                             pc_Description = "Rottweiler",
                             pc_IsDelete = false,
                             pc_Name = "Rottweiler"
                         },
                         new
                         {
-                            pc_Id = "114d9f21-ceab-4907-bb8f-4230d87c9699",
+                            pc_Id = "35099697-853c-4f6f-8b89-386b68f59d91",
                             pc_Description = "Samoyed",
                             pc_IsDelete = false,
                             pc_Name = "Samoyed"
                         },
                         new
                         {
-                            pc_Id = "c97aa07e-15cd-4fb8-8ed1-9feca7116746",
+                            pc_Id = "007de5e2-6ef8-4797-a530-98d901fa8c57",
                             pc_Description = "Shiba Inu",
                             pc_IsDelete = false,
                             pc_Name = "Shiba Inu"
@@ -446,8 +448,8 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            pet_Id = "e4464d01-b5eb-419e-b467-89110c7151bd",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "50740204-b161-498d-ace9-0fa591b6d8f2",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "AKITA INU",
                             pet_Image1 = "image/giongcho/akita-inu.jpg",
                             pet_Image2 = "image/giongcho/akita-inu.jpg",
@@ -464,8 +466,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "698090d1-6bbf-45a6-a5e4-cb922632f3f5",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "84c2ba6a-0be3-45d5-9f11-7483bb0cc867",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "ALASKA",
                             pet_Image1 = "image/giongcho/alaska.jpg",
                             pet_Image2 = "image/giongcho/alaska.jpg",
@@ -482,8 +484,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "9a832e57-7885-4280-883e-a1cb953522f7",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "b375a8dc-8c2b-427e-b5d2-401b7ee83554",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Vitespitz",
                             pet_Image1 = "image/giongcho/chobacha.png",
                             pet_Image2 = "image/giongcho/chobacha.png",
@@ -500,8 +502,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "fd9942c9-1583-4918-8699-4447ccc9b7cd",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "5a4909a1-9823-4b6c-adab-07e63b69d3b1",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "BECGIE Germany",
                             pet_Image1 = "image/giongcho/becgie-duc.jpg",
                             pet_Image2 = "image/giongcho/becgie-duc.jpg",
@@ -518,8 +520,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "670c9fc4-639e-4a3f-90fb-99acff47a49f",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "1077a922-5fcc-423b-b3fa-87d6d5d76121",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "BORDER COLLIE",
                             pet_Image1 = "image/giongcho/BORDER-COLLIE.jpg",
                             pet_Image2 = "image/giongcho/BORDER-COLLIE.jpg",
@@ -536,8 +538,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "ae67537f-402c-471e-91b2-03ce600e5688",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "4ef4b172-1baf-422e-9e92-393bfd6fea30",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "BULLDOG",
                             pet_Image1 = "image/giongcho/bulldog.jpg",
                             pet_Image2 = "image/giongcho/bulldog.jpg",
@@ -554,8 +556,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "50de909d-36fe-432b-b627-6cebe26a6030",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "4462abd5-8b57-4cb2-b1e9-d9600814cdfe",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "BULLY AMERICAN",
                             pet_Image1 = "image/giongcho/bully-american.jpg",
                             pet_Image2 = "image/giongcho/bully-american.jpg",
@@ -572,8 +574,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "c274ce74-3b9f-4508-ab5f-da3951e18828",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "6e22310d-e93c-402d-876d-9ef0ad62484f",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "CHIHUAHUA",
                             pet_Image1 = "image/giongcho/chihuahua.jpg",
                             pet_Image2 = "image/giongcho/chihuahua.jpg",
@@ -590,8 +592,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "b511525e-c471-49c2-962c-2c529351d8af",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "ff250da1-fe77-4795-93c4-2713d8a1a67e",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Dalmatian",
                             pet_Image1 = "image/giongcho/cho-dom.jpg",
                             pet_Image2 = "image/giongcho/cho-dom.jpg",
@@ -608,8 +610,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "f04ce808-9e08-44da-9c37-101dddceba9d",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "3e0adabf-0a9d-4727-bef5-48c9dd938d3d",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Japan Dog",
                             pet_Image1 = "image/giongcho/chonhatban.png",
                             pet_Image2 = "image/giongcho/chonhatban.png",
@@ -626,8 +628,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "0de449ad-9e0a-47ea-87a0-25bd5df91906",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "baa99523-a85c-4d95-ad4c-9312a9b7fc13",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "CHOW CHOW",
                             pet_Image1 = "image/giongcho/chow-chow.jpg",
                             pet_Image2 = "image/giongcho/chow-chow.jpg",
@@ -644,8 +646,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "63068a5c-3a86-4add-b60d-229b0ddc1c29",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "dfdb25a6-f912-444a-bbdd-716ae1646cf9",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "COCKER SPANIEL",
                             pet_Image1 = "image/giongcho/cocker.png",
                             pet_Image2 = "image/giongcho/cocker.png",
@@ -662,8 +664,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "a9dbe202-dec2-43f4-9b26-755ac2c1fa01",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "f9ef84dd-70c4-42a3-b522-cfd75641e187",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "CORGI",
                             pet_Image1 = "image/giongcho/corgy.jpg",
                             pet_Image2 = "image/giongcho/corgy.jpg",
@@ -680,8 +682,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "006542c3-023c-4619-88ba-56a99011a9d6",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "e6574ef9-c4f5-4249-8dd6-1e34dbe2a77b",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "DOBERMANN",
                             pet_Image1 = "image/giongcho/dobermann.jp",
                             pet_Image2 = "image/giongcho/dobermann.jp",
@@ -698,8 +700,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "f3f45f0a-a8c4-494a-ac41-7baa4c7bab14",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "54af5965-e4e0-4237-a2d8-4e7a1673c0ec",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "GOLDEN RETRIEVER",
                             pet_Image1 = "image/giongcho/dobermann.jpg",
                             pet_Image2 = "image/giongcho/dobermann.jpg",
@@ -716,8 +718,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "3ddf012f-8db0-42f2-b8f2-e811364f7598",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "2acdf32f-231e-4887-9d66-fd9be9ba0665",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "GOLDEN RETRIEVE",
                             pet_Image1 = "image/giongcho/golden-retriever.jpg",
                             pet_Image2 = "image/giongcho/golden-retriever.jpg",
@@ -734,8 +736,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "0c0843c1-dd1a-4f79-b9d2-d5b6990f5e29",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "18fd73ba-348e-48fd-ab38-1848474ba98a",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "GREAT DANE",
                             pet_Image1 = "image/giongcho/golden-retriever.jpg",
                             pet_Image2 = "image/giongcho/golden-retriever.jpg",
@@ -752,8 +754,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "5d63ce95-9b2a-4603-aa73-a005c109af04",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "e99ca212-b3e6-4aea-8426-0a5ce7575970",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "GREAT DANE",
                             pet_Image1 = "image/giongcho/great-dane.jpg",
                             pet_Image2 = "image/giongcho/great-dane.jpg",
@@ -770,8 +772,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "97f36fbe-716e-4b1c-a8fd-58457e9adaa9",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "e2d0e537-d570-4ff1-913d-1b1c86fc62ad",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "H'Mong Coc",
                             pet_Image1 = "image/giongcho/mong-coc.jpg",
                             pet_Image2 = "image/giongcho/mong-coc.jpg",
@@ -788,8 +790,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "d9d8463f-8587-4c55-a7c9-4782d0d08d14",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "8854a6af-905b-4eb6-b3fb-4a76fdc3409b",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "HUSKY",
                             pet_Image1 = "image/giongcho/husky.jpg",
                             pet_Image2 = "image/giongcho/husky.jpg",
@@ -806,8 +808,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "ce35e805-e96e-4a5a-a666-bf77a5fd48c5",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "70e57592-a2da-414a-a646-f49bd394a670",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "BLABRADOR",
                             pet_Image1 = "image/giongcho/labrador.png",
                             pet_Image2 = "image/giongcho/labrador.png",
@@ -824,8 +826,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "a679d6ae-4608-4ac1-b2cd-2053ef42036c",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "6e4e38a5-d800-40df-a5fe-c7570d73a2a3",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Sausage",
                             pet_Image1 = "image/giongcho/lap-xuong.jpg",
                             pet_Image2 = "image/giongcho/lap-xuong.jpg",
@@ -842,8 +844,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "5b83fba5-7e8d-4f66-b13a-a5b8391ec175",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "4f152631-848d-4ce8-9033-e951a2f455ff",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "MALINOIS",
                             pet_Image1 = "image/giongcho/choMalinois.png",
                             pet_Image2 = "image/giongcho/choMalinois.png",
@@ -860,8 +862,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "19219124-630e-449d-807c-b8829755cfc4",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "8d662e0e-6b2e-480e-a705-fe6c7cc27622",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Tibetan Clams",
                             pet_Image1 = "image/giongcho/ngaottang.jpg",
                             pet_Image2 = "image/giongcho/ngaottang.jpg",
@@ -878,8 +880,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "45b4e3da-75bc-4623-9568-e479101f8a21",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "b07208c2-0594-4ee3-ae85-166b1de1d93c",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Deer Pug dog",
                             pet_Image1 = "image/giongcho/phoc-huou.jpg",
                             pet_Image2 = "image/giongcho/phoc-huou.jpg",
@@ -896,8 +898,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "583a9137-f072-42ac-9d50-a21d2055b42d",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "98739036-a5ac-4a54-9b56-4e401139ae81",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Phoc squirrel dog",
                             pet_Image1 = "image/giongcho/phoc-soc.jpg",
                             pet_Image2 = "image/giongcho/phoc-soc.jpg",
@@ -914,8 +916,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "3a38f05d-a6c2-4921-aa10-adb469e9e900",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "7a4f15f3-257a-44ca-9583-f8b9b8edc039",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "Phu Quoc dogs",
                             pet_Image1 = "image/giongcho/phu-quoc.jpg",
                             pet_Image2 = "image/giongcho/phu-quoc.jpg",
@@ -932,8 +934,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "fc3bbe89-71e1-46de-90b8-968d8a6f00cd",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "2de53e61-b28d-49f8-bf61-28d1b4e9d010",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "PITBULL",
                             pet_Image1 = "image/giongcho/pitbull.jpg",
                             pet_Image2 = "image/giongcho/pitbull.jpg",
@@ -950,8 +952,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "67ee00ce-f06f-4f03-a432-61d71f6204ba",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "f7b84a71-d1d5-4ae9-ac17-f3b6980f511e",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "POODLE",
                             pet_Image1 = "image/giongcho/poodle.jpg",
                             pet_Image2 = "image/giongcho/poodle.jpg",
@@ -968,8 +970,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "81a96eac-d022-4838-8d18-913762233887",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "1ac399d6-9757-4d82-832b-e5a29399274d",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "PUG",
                             pet_Image1 = "image/giongcho/pub.jpg",
                             pet_Image2 = "image/giongcho/pub.jpg",
@@ -986,8 +988,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "7c82a15c-8632-498d-8972-306c02a93a60",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "160e44f3-705f-4a71-8f53-71f98014c0bb",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "ROTTWEILER",
                             pet_Image1 = "image/giongcho/rottweiler.jpg",
                             pet_Image2 = "image/giongcho/rottweiler.jpg",
@@ -1004,8 +1006,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "557e3d4d-5e15-41ab-a144-7752f13724cd",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "aed45db6-b199-4325-9121-f09e0468bf2e",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "ROTTWEILER",
                             pet_Image1 = "image/giongcho/rottweiler.jpg",
                             pet_Image2 = "image/giongcho/rottweiler.jpg",
@@ -1022,8 +1024,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "667797eb-dbb3-4ffe-aa8c-fae6e6173c4e",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "9d57b4c4-d624-4f97-aa53-a0b89753d5fe",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "SAMOYED",
                             pet_Image1 = "image/giongcho/samoyed.jpg",
                             pet_Image2 = "image/giongcho/samoyed.jpg",
@@ -1040,8 +1042,8 @@ namespace Database.Migrations
                         },
                         new
                         {
-                            pet_Id = "d1059645-632e-4003-b934-1831861536fb",
-                            pet_CategoryId = "fd16829e-8d0b-48c9-92ba-84289b9ac312",
+                            pet_Id = "7ffb76aa-7750-497f-8490-35f20d98f606",
+                            pet_CategoryId = "56b58303-c5c4-462f-80f2-84f29696ce70",
                             pet_Description = "SHIBA INU",
                             pet_Image1 = "image/giongcho/shiba.jpg",
                             pet_Image2 = "image/giongcho/shiba.jpg",
@@ -1080,16 +1082,6 @@ namespace Database.Migrations
                     b.HasIndex("pib_BillId");
 
                     b.ToTable("PettInBill", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            pib_PetId = "e4464d01-b5eb-419e-b467-89110c7151bd",
-                            pib_BillId = "858d5e10-4b2a-4be5-aded-c85860cbbe4e",
-                            pib_IsDelete = false,
-                            pib_Price = 12.0,
-                            pib_Quantity = 1.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.ProductCategories", b =>
@@ -1115,56 +1107,56 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            proc_Id = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
+                            proc_Id = "22fbf9d7-2e58-42af-be4b-b9b3cd2c7e20",
                             proc_Description = "Pet Supplies",
                             proc_IsDelete = false,
                             proc_Name = "Pet Supplies"
                         },
                         new
                         {
-                            proc_Id = "4dff788c-0cfd-403a-bf0a-aed796315c15",
+                            proc_Id = "5d3f1f23-d2ad-4cdf-b641-d4c6b3844c62",
                             proc_Description = "Pet Food",
                             proc_IsDelete = false,
                             proc_Name = "Pet Food"
                         },
                         new
                         {
-                            proc_Id = "55251cdc-972e-490a-a5ce-2f3c0c7a22dd",
+                            proc_Id = "fc9e7ba5-1376-4b67-a691-fe28227600cc",
                             proc_Description = "Pet Cage",
                             proc_IsDelete = false,
                             proc_Name = "Pet Cage"
                         },
                         new
                         {
-                            proc_Id = "b5e73762-d2f0-4adb-b02d-cd1f937f2582",
+                            proc_Id = "38ff1640-523b-42ba-a40e-4a5e913a14c1",
                             proc_Description = "Pet Toys",
                             proc_IsDelete = false,
                             proc_Name = "Pet Toys"
                         },
                         new
                         {
-                            proc_Id = "60080711-bae6-4710-8e2e-11427cd8c241",
+                            proc_Id = "389cf390-06ff-4d55-b6be-25e6b4e531da",
                             proc_Description = "Beauty Accessories",
                             proc_IsDelete = false,
                             proc_Name = "Beauty Accessories"
                         },
                         new
                         {
-                            proc_Id = "20153495-0611-47b4-8471-cfe1664f7161",
+                            proc_Id = "a9a81415-ad79-4e0b-a5fe-cb2cd8a52eac",
                             proc_Description = "Pet Clothes",
                             proc_IsDelete = false,
                             proc_Name = "Pet Clothes"
                         },
                         new
                         {
-                            proc_Id = "aeb51ee7-c846-41ba-b3bc-5982453da114",
+                            proc_Id = "0ba11721-93aa-4de7-800b-4f1b07b5b2cb",
                             proc_Description = "Nutritional Food",
                             proc_IsDelete = false,
                             proc_Name = "Nutritional Food"
                         },
                         new
                         {
-                            proc_Id = "bfdea2fa-7ce4-4776-8a60-a4f26e539b6f",
+                            proc_Id = "f07da8a3-ef83-46b3-a231-6956c98c4e1c",
                             proc_Description = "Medicines & Functional Products",
                             proc_IsDelete = false,
                             proc_Name = "Medicines & Functional Products"
@@ -1193,16 +1185,6 @@ namespace Database.Migrations
                     b.HasIndex("proib_BillId");
 
                     b.ToTable("ProductInBill", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            proib_ProductId = "42b5eb42-296d-4e4f-aa9a-beaddd99a43a",
-                            proib_BillId = "858d5e10-4b2a-4be5-aded-c85860cbbe4e",
-                            proib_IsDelete = false,
-                            proib_Price = 12.0,
-                            proib_Quantity = 1.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Products", b =>
@@ -1259,568 +1241,6 @@ namespace Database.Migrations
                     b.HasIndex("product_CategoryId");
 
                     b.ToTable("Products", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            product_Id = "42b5eb42-296d-4e4f-aa9a-beaddd99a43a",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Transparent Backpack For Dogs and Cats",
-                            product_Image1 = "image/phukien/phukien-balotrongsuot.png",
-                            product_Image2 = "image/phukien/phukien-balotrongsuot.png",
-                            product_Image3 = "image/phukien/phukien-balotrongsuot.png",
-                            product_Image4 = "image/phukien/phukien-balotrongsuot.png",
-                            product_Image5 = "image/phukien/phukien-balotrongsuot.png",
-                            product_IsDelete = false,
-                            product_Name = "Transparent Backpack For Dogs and Cats",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "ee8bfd4a-3c71-4b8d-8a6b-63cf2334c371",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Training Whistle",
-                            product_Image1 = "image/phukien/phukien-coihuanluyen.png",
-                            product_Image2 = "image/phukien/phukien-coihuanluyen.png",
-                            product_Image3 = "image/phukien/phukien-coihuanluyen.png",
-                            product_Image4 = "image/phukien/phukien-coihuanluyen.png",
-                            product_Image5 = "image/phukien/phukien-coihuanluyen.png",
-                            product_IsDelete = false,
-                            product_Name = "Training Whistle",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "2dd5546d-ff91-427b-9aed-f490a5cbda0c",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Lamb Sticks",
-                            product_Image1 = "image/phukien/phukien-thitcuuque.png",
-                            product_Image2 = "image/phukien/phukien-thitcuuque.png",
-                            product_Image3 = "image/phukien/phukien-thitcuuque.png",
-                            product_Image4 = "image/phukien/phukien-thitcuuque.png",
-                            product_Image5 = "image/phukien/phukien-thitcuuque.png",
-                            product_IsDelete = false,
-                            product_Name = "Lamb Sticks",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "9949b483-a3ec-4568-b26b-bd39bcb33ae8",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "SmartHeart For Small Dogs",
-                            product_Image1 = "image/phukien/phukien-SmartHeart.png",
-                            product_Image2 = "image/phukien/phukien-SmartHeart.png",
-                            product_Image3 = "image/phukien/phukien-SmartHeart.png",
-                            product_Image4 = "image/phukien/phukien-SmartHeart.png",
-                            product_Image5 = "image/phukien/phukien-SmartHeart.png",
-                            product_IsDelete = false,
-                            product_Name = "SmartHeart For Small Dogs",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "bf83a292-7b3d-4b48-805d-4354e63fbffd",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Bonus Cake Tablet",
-                            product_Image1 = "image/phukien/phukien-banhthuong.png",
-                            product_Image2 = "image/phukien/phukien-banhthuong.png",
-                            product_Image3 = "image/phukien/phukien-banhthuong.png",
-                            product_Image4 = "image/phukien/phukien-banhthuong.png",
-                            product_Image5 = "image/phukien/phukien-banhthuong.png",
-                            product_IsDelete = false,
-                            product_Name = "Bonus Cake Tablet",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "ee72e0b2-ad24-4d63-ab67-596289309afb",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Royal Canin For Adult Dogs",
-                            product_Image1 = "image/phukien/phukien-royal_truongthanh.png",
-                            product_Image2 = "image/phukien/phukien-royal_truongthanh.png",
-                            product_Image3 = "image/phukien/phukien-royal_truongthanh.png",
-                            product_Image4 = "image/phukien/phukien-royal_truongthanh.png",
-                            product_Image5 = "image/phukien/phukien-royal_truongthanh.png",
-                            product_IsDelete = false,
-                            product_Name = "Royal Canin For Adult Dogs",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "bbf18e56-15cc-4927-9e38-a4f55f6d306b",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Pair of Bows",
-                            product_Image1 = "image/phukien/phukien-capno.png",
-                            product_Image2 = "image/phukien/phukien-capno.png",
-                            product_Image3 = "image/phukien/phukien-capno.png",
-                            product_Image4 = "image/phukien/phukien-capno.png",
-                            product_Image5 = "image/phukien/phukien-capno.png",
-                            product_IsDelete = false,
-                            product_Name = "Pair of Bows",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "d71d0cb2-f97e-4625-8ab5-528b2dfd9797",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Princess Lace Scarf",
-                            product_Image1 = "image/phukien/phukien-khanren.png",
-                            product_Image2 = "image/phukien/phukien-khanren.png",
-                            product_Image3 = "image/phukien/phukien-khanren.png",
-                            product_Image4 = "image/phukien/phukien-khanren.png",
-                            product_Image5 = "image/phukien/phukien-khanren.png",
-                            product_IsDelete = false,
-                            product_Name = "Princess Lace Scarf",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "5cbaba30-1626-4f29-8d6a-13cd2782ebe0",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Drugs of Calcium",
-                            product_Image1 = "image/phukien/phukien-thuoccanxi.png",
-                            product_Image2 = "image/phukien/phukien-thuoccanxi.png",
-                            product_Image3 = "image/phukien/phukien-thuoccanxi.png",
-                            product_Image4 = "image/phukien/phukien-thuoccanxi.png",
-                            product_Image5 = "image/phukien/phukien-thuoccanxi.png",
-                            product_IsDelete = false,
-                            product_Name = "Drugs of Calcium",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "159372de-7ff2-4f9d-9fbd-15327d1adddf",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Bow Bow Bra",
-                            product_Image1 = "image/phukien/phukien-aongucnochuong.png",
-                            product_Image2 = "image/phukien/phukien-aongucnochuong.png",
-                            product_Image3 = "image/phukien/phukien-aongucnochuong.png",
-                            product_Image4 = "image/phukien/phukien-aongucnochuong.png",
-                            product_Image5 = "image/phukien/phukien-aongucnochuong.png",
-                            product_IsDelete = false,
-                            product_Name = "Bow Bow Bra",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "a49eb53e-a56e-4052-9a24-656a68958d99",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Balloon Toys",
-                            product_Image1 = "image/phukien/phukien-bongbongdochoi.png",
-                            product_Image2 = "image/phukien/phukien-bongbongdochoi.png",
-                            product_Image3 = "image/phukien/phukien-bongbongdochoi.png",
-                            product_Image4 = "image/phukien/phukien-bongbongdochoi.png",
-                            product_Image5 = "image/phukien/phukien-bongbongdochoi.png",
-                            product_IsDelete = false,
-                            product_Name = "Balloon Toys",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "f6d3de12-0cbd-4e70-bbff-32907619bd6f",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Dog Fence",
-                            product_Image1 = "image/phukien/phukien-raoquaycho.png",
-                            product_Image2 = "image/phukien/phukien-raoquaycho.png",
-                            product_Image3 = "image/phukien/phukien-raoquaycho.png",
-                            product_Image4 = "image/phukien/phukien-raoquaycho.png",
-                            product_Image5 = "image/phukien/phukien-raoquaycho.png",
-                            product_IsDelete = false,
-                            product_Name = "Dog Fence",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "1644a51f-7767-4231-9b18-5769d798353f",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "BLOOM SEXY Fragrance Bath Oil",
-                            product_Image1 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
-                            product_Image2 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
-                            product_Image3 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
-                            product_Image4 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
-                            product_Image5 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
-                            product_IsDelete = false,
-                            product_Name = "BLOOM SEXY Fragrance Bath Oil",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "23b9e720-434b-4373-b00e-2c7f02fda751",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Toys",
-                            product_Image1 = "image/phukien/phukien-dochoi.png",
-                            product_Image2 = "image/phukien/phukien-dochoi.png",
-                            product_Image3 = "image/phukien/phukien-dochoi.png",
-                            product_Image4 = "image/phukien/phukien-dochoi.png",
-                            product_Image5 = "image/phukien/phukien-dochoi.png",
-                            product_IsDelete = false,
-                            product_Name = "Toys",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "0b9911ab-0d20-4d4c-9fb9-bcd51755090e",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "BLOOM SEXY Fragrance Bath Oil",
-                            product_Image1 = "image/phukien/phukien-dautamFay.png",
-                            product_Image2 = "image/phukien/phukien-dautamFay.png",
-                            product_Image3 = "image/phukien/phukien-dautamFay.png",
-                            product_Image4 = "image/phukien/phukien-dautamFay.png",
-                            product_Image5 = "image/phukien/phukien-dautamFay.png",
-                            product_IsDelete = false,
-                            product_Name = "BLOOM SEXY Fragrance Bath Oil",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "49442f9c-7b09-4dd5-a8bb-e4f1f9584be8",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Anti-Tear Syrup",
-                            product_Image1 = "image/phukien/phukien-sirochongchaynuocmat.png",
-                            product_Image2 = "image/phukien/phukien-sirochongchaynuocmat.png",
-                            product_Image3 = "image/phukien/phukien-sirochongchaynuocmat.png",
-                            product_Image4 = "image/phukien/phukien-sirochongchaynuocmat.png",
-                            product_Image5 = "image/phukien/phukien-sirochongchaynuocmat.png",
-                            product_IsDelete = false,
-                            product_Name = "Anti-Tear Syrup",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "5ca375ac-eac9-474b-9a9b-721c012a0867",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Lice Treatment Ring",
-                            product_Image1 = "image/phukien/phukien-vongtriveran.png",
-                            product_Image2 = "image/phukien/phukien-vongtriveran.png",
-                            product_Image3 = "image/phukien/phukien-vongtriveran.png",
-                            product_Image4 = "image/phukien/phukien-vongtriveran.png",
-                            product_Image5 = "image/phukien/phukien-vongtriveran.png",
-                            product_IsDelete = false,
-                            product_Name = "Lice Treatment Ring",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "39c929c9-cbdc-4cc1-8815-0ae8a19d9a61",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "HANTOC Lice Spray",
-                            product_Image1 = "image/phukien/phukien-xitveranHANTOC.png",
-                            product_Image2 = "image/phukien/phukien-xitveranHANTOC.png",
-                            product_Image3 = "image/phukien/phukien-xitveranHANTOC.png",
-                            product_Image4 = "image/phukien/phukien-xitveranHANTOC.png",
-                            product_Image5 = "image/phukien/phukien-xitveranHANTOC.png",
-                            product_IsDelete = false,
-                            product_Name = "HANTOC Lice Spray",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "fb4f044a-9a60-44be-a8bc-1a5713a198a2",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Nutri-Nutrition Gel",
-                            product_Image1 = "image/phukien/phukien-gelddNutri.png",
-                            product_Image2 = "image/phukien/phukien-gelddNutri.png",
-                            product_Image3 = "image/phukien/phukien-gelddNutri.png",
-                            product_Image4 = "image/phukien/phukien-gelddNutri.png",
-                            product_Image5 = "image/phukien/phukien-gelddNutri.png",
-                            product_IsDelete = false,
-                            product_Name = "Nutri-Nutrition Gel",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "a881001a-4582-49e9-80d8-1b32f11dab87",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Bio Milk Powder For Dogs and Cats",
-                            product_Image1 = "image/phukien/phukien-suabotchomeo.png",
-                            product_Image2 = "image/phukien/phukien-suabotchomeo.png",
-                            product_Image3 = "image/phukien/phukien-suabotchomeo.png",
-                            product_Image4 = "image/phukien/phukien-suabotchomeo.png",
-                            product_Image5 = "image/phukien/phukien-suabotchomeo.png",
-                            product_IsDelete = false,
-                            product_Name = "Bio Milk Powder For Dogs and Cats",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "63e1c8a0-e851-4257-b848-469a1da2fa84",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Sleeky Multivitamin",
-                            product_Image1 = "image/phukien/phukien-vitamintonghop.png",
-                            product_Image2 = "image/phukien/phukien-vitamintonghop.png",
-                            product_Image3 = "image/phukien/phukien-vitamintonghop.png",
-                            product_Image4 = "image/phukien/phukien-vitamintonghop.png",
-                            product_Image5 = "image/phukien/phukien-vitamintonghop.png",
-                            product_IsDelete = false,
-                            product_Name = "Sleeky Multivitamin",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "d9347552-9de7-4647-be84-1515889de94d",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Canxi Nano",
-                            product_Image1 = "image/phukien/phukien-canxinano.png",
-                            product_Image2 = "image/phukien/phukien-canxinano.png",
-                            product_Image3 = "image/phukien/phukien-canxinano.png",
-                            product_Image4 = "image/phukien/phukien-canxinano.png",
-                            product_Image5 = "image/phukien/phukien-canxinano.png",
-                            product_IsDelete = false,
-                            product_Name = "Canxi Nano",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "0ae3f2dc-38b0-42b6-a4a5-79a1e3b38beb",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Shipping Bag",
-                            product_Image1 = "image/phukien/phukien-tuivanchuyen.png",
-                            product_Image2 = "image/phukien/phukien-tuivanchuyen.png",
-                            product_Image3 = "image/phukien/phukien-tuivanchuyen.png",
-                            product_Image4 = "image/phukien/phukien-tuivanchuyen.png",
-                            product_Image5 = "image/phukien/phukien-tuivanchuyen.png",
-                            product_IsDelete = false,
-                            product_Name = "Shipping Bag",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "7d126614-d41a-42b7-9310-850831ce1419",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Food Toys",
-                            product_Image1 = "image/phukien/phukien-dochoithucan.png",
-                            product_Image2 = "image/phukien/phukien-dochoithucan.png",
-                            product_Image3 = "image/phukien/phukien-dochoithucan.png",
-                            product_Image4 = "image/phukien/phukien-dochoithucan.png",
-                            product_Image5 = "image/phukien/phukien-dochoithucan.png",
-                            product_IsDelete = false,
-                            product_Name = "Food Toys",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "36baabe2-f1c1-46a2-ba37-fbd697154e68",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Coat + Strap",
-                            product_Image1 = "image/phukien/phukien-ao_giaythat.png",
-                            product_Image2 = "image/phukien/phukien-ao_giaythat.png",
-                            product_Image3 = "image/phukien/phukien-ao_giaythat.png",
-                            product_Image4 = "image/phukien/phukien-ao_giaythat.png",
-                            product_Image5 = "image/phukien/phukien-ao_giaythat.png",
-                            product_IsDelete = false,
-                            product_Name = "Coat + Strap",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "9b8f4b5f-428b-42fc-9c4e-2eb222cebcfd",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Throwing dish",
-                            product_Image1 = "image/phukien/phukien-dianem.png",
-                            product_Image2 = "image/phukien/phukien-dianem.png",
-                            product_Image3 = "image/phukien/phukien-dianem.png",
-                            product_Image4 = "image/phukien/phukien-dianem.png",
-                            product_Image5 = "image/phukien/phukien-dianem.png",
-                            product_IsDelete = false,
-                            product_Name = "Throwing dish",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "8745b658-fdfd-4506-bfcd-f66b37675a05",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Orb of Thorns",
-                            product_Image1 = "image/phukien/phukien-quacaugai.png",
-                            product_Image2 = "image/phukien/phukien-quacaugai.png",
-                            product_Image3 = "image/phukien/phukien-quacaugai.png",
-                            product_Image4 = "image/phukien/phukien-quacaugai.png",
-                            product_Image5 = "image/phukien/phukien-quacaugai.png",
-                            product_IsDelete = false,
-                            product_Name = "Orb of Thorns",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "50ee85d3-3289-46b5-b180-077ca0493e58",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Food Gun",
-                            product_Image1 = "image/phukien/phukien-sungbanthucan.png",
-                            product_Image2 = "image/phukien/phukien-sungbanthucan.png",
-                            product_Image3 = "image/phukien/phukien-sungbanthucan.png",
-                            product_Image4 = "image/phukien/phukien-sungbanthucan.png",
-                            product_Image5 = "image/phukien/phukien-sungbanthucan.png",
-                            product_IsDelete = false,
-                            product_Name = "Food Gun",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "749332d1-7531-4630-bc81-a956834d1a67",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Feather Brush",
-                            product_Image1 = "image/phukien/phukien-banchaylong.png",
-                            product_Image2 = "image/phukien/phukien-banchaylong.png",
-                            product_Image3 = "image/phukien/phukien-banchaylong.png",
-                            product_Image4 = "image/phukien/phukien-banchaylong.png",
-                            product_Image5 = "image/phukien/phukien-banchaylong.png",
-                            product_IsDelete = false,
-                            product_Name = "Feather Brush",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "9a44d5cc-e6bd-43f3-8666-c4e917f1647b",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Rooster Toys",
-                            product_Image1 = "image/phukien/phukien-dochoi_gatrong.png",
-                            product_Image2 = "image/phukien/phukien-dochoi_gatrong.png",
-                            product_Image3 = "image/phukien/phukien-dochoi_gatrong.png",
-                            product_Image4 = "image/phukien/phukien-dochoi_gatrong.png",
-                            product_Image5 = "image/phukien/phukien-dochoi_gatrong.png",
-                            product_IsDelete = false,
-                            product_Name = "Rooster Toys",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "c3acc6d4-1714-494f-849d-c286308f87a4",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Skin Bones",
-                            product_Image1 = "image/phukien/phukien-xuongda.png",
-                            product_Image2 = "image/phukien/phukien-xuongda.png",
-                            product_Image3 = "image/phukien/phukien-xuongda.png",
-                            product_Image4 = "image/phukien/phukien-xuongda.png",
-                            product_Image5 = "image/phukien/phukien-xuongda.png",
-                            product_IsDelete = false,
-                            product_Name = "Skin Bones",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "b7b2991d-2e70-4cb1-a02e-b4146c72c861",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "SmartHeart For Adult Dogs",
-                            product_Image1 = "image/phukien/phukien-Smartheart_truongthanh.png",
-                            product_Image2 = "image/phukien/phukien-Smartheart_truongthanh.png",
-                            product_Image3 = "image/phukien/phukien-Smartheart_truongthanh.png",
-                            product_Image4 = "image/phukien/phukien-Smartheart_truongthanh.png",
-                            product_Image5 = "image/phukien/phukien-Smartheart_truongthanh.png",
-                            product_IsDelete = false,
-                            product_Name = "SmartHeart For Adult Dogs",
-                            product_Price = 1000000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "e545cf69-3107-4a0a-b676-3ac97490eb7f",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Royal Canin For Small Dogs",
-                            product_Image1 = "image/phukien/phukien-roya_chonho.png",
-                            product_Image2 = "image/phukien/phukien-roya_chonho.png",
-                            product_Image3 = "image/phukien/phukien-roya_chonho.png",
-                            product_Image4 = "image/phukien/phukien-roya_chonho.png",
-                            product_Image5 = "image/phukien/phukien-roya_chonho.png",
-                            product_IsDelete = false,
-                            product_Name = "Royal Canin For Small Dogs",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "e3f9bcd1-76c7-475e-940c-beffac79f479",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "FAY Dry Bath Powder",
-                            product_Image1 = "image/phukien/phukien-phantamkhoFay.png",
-                            product_Image2 = "image/phukien/phukien-phantamkhoFay.png",
-                            product_Image3 = "image/phukien/phukien-phantamkhoFay.png",
-                            product_Image4 = "image/phukien/phukien-phantamkhoFay.png",
-                            product_Image5 = "image/phukien/phukien-phantamkhoFay.png",
-                            product_IsDelete = false,
-                            product_Name = "FAY Dry Bath Powder",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        },
-                        new
-                        {
-                            product_Id = "5727c1c5-664a-4673-8453-737fff1b326f",
-                            product_CategoryId = "5441fd16-72fe-4714-8254-a9d6f966b8cf",
-                            product_Description = "Oliver Shower Gel",
-                            product_Image1 = "image/phukien/phukien-suatamoliver.png",
-                            product_Image2 = "image/phukien/phukien-suatamoliver.png",
-                            product_Image3 = "image/phukien/phukien-suatamoliver.png",
-                            product_Image4 = "image/phukien/phukien-suatamoliver.png",
-                            product_Image5 = "image/phukien/phukien-suatamoliver.png",
-                            product_IsDelete = false,
-                            product_Name = "Oliver Shower Gel",
-                            product_Price = 100000.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.UserContact", b =>
@@ -1860,13 +1280,13 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            uc_Id = "fda9fdec-5aa1-4fdf-bff7-5c94d37bca55",
+                            uc_Id = "824a996b-08a2-492f-b322-fbabecec9fe5",
                             uc_Content = "Content",
                             uc_Email = "Email",
                             uc_IsDelete = false,
                             uc_Name = "Name",
                             uc_Phone = "Phone",
-                            uc_UserCreate = "7e7fd7d1-aaad-4a7d-b3a0-ef85c22f9fd8"
+                            uc_UserCreate = "8b3e6a69-6154-4a41-98c8-327dbfbf5ef8"
                         });
                 });
 
@@ -2065,8 +1485,8 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "7e7fd7d1-aaad-4a7d-b3a0-ef85c22f9fd8",
-                            RoleId = "6503ed51-968f-43f0-a9dd-67c041ab5a7a"
+                            UserId = "8b3e6a69-6154-4a41-98c8-327dbfbf5ef8",
+                            RoleId = "370047eb-dbf2-4313-9d66-ce4ce1cd2e2f"
                         });
                 });
 
@@ -2109,8 +1529,8 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6503ed51-968f-43f0-a9dd-67c041ab5a7a",
-                            ConcurrencyStamp = "c4703ba8-8c82-4d95-8f63-38bbbf07b5c1",
+                            Id = "370047eb-dbf2-4313-9d66-ce4ce1cd2e2f",
+                            ConcurrencyStamp = "a85e4994-7ddb-4c50-b750-26d6c1bece19",
                             Name = "ADMIN",
                             NormalizedName = "Admin",
                             Description = "admin",
@@ -2143,20 +1563,20 @@ namespace Database.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7e7fd7d1-aaad-4a7d-b3a0-ef85c22f9fd8",
+                            Id = "8b3e6a69-6154-4a41-98c8-327dbfbf5ef8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3e066ff8-6ebf-400b-bf1f-4c968961233a",
+                            ConcurrencyStamp = "cd7841fe-ce21-4cf3-9afb-410c75a3ff53",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMYLKOHUE9su7qFg/h9pS+EbBrRw1PA2M0ouiyEYMCkEPw8PNeaPe2nHRGED8pHbcg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEKQpZiSSZVMhWKO5cwv2r7xLhkE2rS26JoNstoamC1xyGS/Gj6/oej45pcQVu2kjQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7eda6fbb-2dc3-4686-ab22-9266801786a0",
+                            SecurityStamp = "16e07cf9-b330-458d-abb9-84ca11a1d132",
                             TwoFactorEnabled = false,
                             UserName = "Admin",
-                            DoB = new DateTime(2022, 10, 23, 0, 57, 13, 603, DateTimeKind.Local).AddTicks(253),
+                            DoB = new DateTime(2022, 10, 23, 0, 56, 3, 900, DateTimeKind.Local).AddTicks(3365),
                             FirstName = "FirstName",
                             LastName = "LastName",
                             isDelete = false
