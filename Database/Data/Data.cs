@@ -44,6 +44,7 @@ namespace Database.Data
             string newPc_Id29 = Guid.NewGuid().ToString();
             string newPc_Id30 = Guid.NewGuid().ToString();
             string newPc_Id31 = Guid.NewGuid().ToString();
+            string newPc_Id32 = Guid.NewGuid().ToString();
 
             builder.Entity<PetCategories>().HasData(
                 new PetCategories()
@@ -69,203 +70,203 @@ namespace Database.Data
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id3,
+                    pc_Id = newPc_Id4,
                     pc_Name = "Pekingese",
                     pc_Description = "Pekingese",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id4,
+                    pc_Id = newPc_Id5,
                     pc_Name = "Becgie Germany",
                     pc_Description = "Becgie Germany",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id5,
+                    pc_Id = newPc_Id6,
                     pc_Name = "Border collie",
                     pc_Description = "Border collie",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id6,
+                    pc_Id = newPc_Id7,
                     pc_Name = "Bulldog",
                     pc_Description = "Bulldog",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id7,
+                    pc_Id = newPc_Id8,
                     pc_Name = "Bully American",
                     pc_Description = "Bully American",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id8,
+                    pc_Id = newPc_Id9,
                     pc_Name = "Chihuahua",
                     pc_Description = "Chihuahua",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id9,
+                    pc_Id = newPc_Id10,
                     pc_Name = "Dalmatian",
                     pc_Description = "Dalmatian",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id10,
+                    pc_Id = newPc_Id11,
                     pc_Name = "Japan Dog",
                     pc_Description = "Japan Dog",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id11,
+                    pc_Id = newPc_Id12,
                     pc_Name = "Chow Chow",
                     pc_Description = "Chow Chow",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id12,
+                    pc_Id = newPc_Id13,
                     pc_Name = "Cocker Spaniel",
                     pc_Description = "Cocker Spaniel",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id13,
+                    pc_Id = newPc_Id14,
                     pc_Name = "Corgi",
                     pc_Description = "Corgi",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id14,
+                    pc_Id = newPc_Id15,
                     pc_Name = "Dobermann",
                     pc_Description = "Dobermann",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id15,
+                    pc_Id = newPc_Id16,
                     pc_Name = "Golden Retriever",
                     pc_Description = "Golden Retriever",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id6,
+                    pc_Id = newPc_Id17,
                     pc_Name = "Great Dane",
                     pc_Description = "Great Dane",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id17,
+                    pc_Id = newPc_Id18,
                     pc_Name = "H'Mong Coc",
                     pc_Description = "H'Mong Coc",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id18,
+                    pc_Id = newPc_Id19,
                     pc_Name = "Husky",
                     pc_Description = "Husky",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id19,
+                    pc_Id = newPc_Id20,
                     pc_Name = "Labrador",
                     pc_Description = "Labrador",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id20,
+                    pc_Id = newPc_Id21,
                     pc_Name = "Sausage",
                     pc_Description = "Sausage",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id21,
+                    pc_Id = newPc_Id22,
                     pc_Name = "Malinois",
                     pc_Description = "Malinois",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id22,
+                    pc_Id = newPc_Id23,
                     pc_Name = "Tibetan Clams",
                     pc_Description = "Tibetan Clams",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id23,
+                    pc_Id = newPc_Id24,
                     pc_Name = "Pho Deer",
                     pc_Description = "Pho Deer",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id24,
+                    pc_Id = newPc_Id25,
                     pc_Name = "Phoc Soc",
                     pc_Description = "Phoc Soc",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id25,
+                    pc_Id = newPc_Id26,
                     pc_Name = "Phu Quoc",
                     pc_Description = "Phu Quoc",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id26,
+                    pc_Id = newPc_Id27,
                     pc_Name = "Pitbull",
                     pc_Description = "Pitbull",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id27,
+                    pc_Id = newPc_Id28,
                     pc_Name = "Poodle",
                     pc_Description = "Poodle",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id28,
+                    pc_Id = newPc_Id29,
                     pc_Name = "Pug",
                     pc_Description = "Pug",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id29,
+                    pc_Id = newPc_Id30,
                     pc_Name = "Rottweiler",
                     pc_Description = "Rottweiler",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id30,
+                    pc_Id = newPc_Id31,
                     pc_Name = "Samoyed",
                     pc_Description = "Samoyed",
                     pc_IsDelete = false
                 },
                 new PetCategories()
                 {
-                    pc_Id = newPc_Id31,
+                    pc_Id = newPc_Id32,
                     pc_Name = "Shiba Inu",
                     pc_Description = "Shiba Inu",
                     pc_IsDelete = false
@@ -310,6 +311,7 @@ namespace Database.Data
             string newPet_Id32 = Guid.NewGuid().ToString();
             string newPet_Id33 = Guid.NewGuid().ToString();
             string newPet_Id34 = Guid.NewGuid().ToString();
+            string newPet_Id35 = Guid.NewGuid().ToString();
 
             builder.Entity<Pets>().HasData(
                         new Pets()
@@ -1022,26 +1024,570 @@ namespace Database.Data
 
             // Table Product
             var newProduct_Id1 = Guid.NewGuid().ToString();
+            var newProduct_Id2 = Guid.NewGuid().ToString();
+            var newProduct_Id3 = Guid.NewGuid().ToString();
+            var newProduct_Id4 = Guid.NewGuid().ToString();
+            var newProduct_Id5 = Guid.NewGuid().ToString();
+            var newProduct_Id6 = Guid.NewGuid().ToString();
+            var newProduct_Id7 = Guid.NewGuid().ToString();
+            var newProduct_Id8 = Guid.NewGuid().ToString();
+            var newProduct_Id9 = Guid.NewGuid().ToString();
+            var newProduct_Id10 = Guid.NewGuid().ToString();
+            var newProduct_Id11 = Guid.NewGuid().ToString();
+            var newProduct_Id12 = Guid.NewGuid().ToString();
+            var newProduct_Id13 = Guid.NewGuid().ToString();
+            var newProduct_Id14 = Guid.NewGuid().ToString();
+            var newProduct_Id15 = Guid.NewGuid().ToString();
+            var newProduct_Id16 = Guid.NewGuid().ToString();
+            var newProduct_Id17 = Guid.NewGuid().ToString();
+            var newProduct_Id18 = Guid.NewGuid().ToString();
+            var newProduct_Id19 = Guid.NewGuid().ToString();
+            var newProduct_Id20 = Guid.NewGuid().ToString();
+            var newProduct_Id21 = Guid.NewGuid().ToString();
+            var newProduct_Id22 = Guid.NewGuid().ToString();
+            var newProduct_Id23 = Guid.NewGuid().ToString();
+            var newProduct_Id24 = Guid.NewGuid().ToString();
+            var newProduct_Id25 = Guid.NewGuid().ToString();
+            var newProduct_Id26 = Guid.NewGuid().ToString();
+            var newProduct_Id27 = Guid.NewGuid().ToString();
+            var newProduct_Id28 = Guid.NewGuid().ToString();
+            var newProduct_Id29 = Guid.NewGuid().ToString();
+            var newProduct_Id30 = Guid.NewGuid().ToString();
+            var newProduct_Id31 = Guid.NewGuid().ToString();
+            var newProduct_Id32 = Guid.NewGuid().ToString();
+            var newProduct_Id33 = Guid.NewGuid().ToString();
+            var newProduct_Id34 = Guid.NewGuid().ToString();
+            var newProduct_Id35 = Guid.NewGuid().ToString();
 
 
             builder.Entity<Products>().HasData(
-                    new Products()
-                    {
-                        product_Id = newProduct_Id1,
-                        product_Name = "AKITA INU",
-                        product_Description = "AKITA INU",
-                        product_Image1 = "~/image/giongcho/akita-inu.jpg",
-                        product_Image2 = "~/image/giongcho/akita-inu.jpg",
-                        product_Image3 = "~/image/giongcho/akita-inu.jpg",
-                        product_Image4 = "~/image/giongcho/akita-inu.jpg",
-                        product_Image5 = "~/image/giongcho/akita-inu.jpg",
-                        product_Price = 1,
-                        product_Rate = 5,
-                        product_ReProducePrice = 0,
-                        product_CategoryId = newProc_Id1,
-                        product_IsDelete = false
-                    }
-                    );
+                     new Products()
+                     {
+                         product_Id = newProduct_Id1,
+                         product_Name = "Transparent Backpack For Dogs and Cats",
+                         product_Description = "Transparent Backpack For Dogs and Cats",
+                         product_Image1 = "image/phukien/phukien-balotrongsuot.png",
+                         product_Image2 = "image/phukien/phukien-balotrongsuot.png",
+                         product_Image3 = "image/phukien/phukien-balotrongsuot.png",
+                         product_Image4 = "image/phukien/phukien-balotrongsuot.png",
+                         product_Image5 = "image/phukien/phukien-balotrongsuot.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id2,
+                         product_Name = "Training Whistle",
+                         product_Description = "Training Whistle",
+                         product_Image1 = "image/phukien/phukien-coihuanluyen.png",
+                         product_Image2 = "image/phukien/phukien-coihuanluyen.png",
+                         product_Image3 = "image/phukien/phukien-coihuanluyen.png",
+                         product_Image4 = "image/phukien/phukien-coihuanluyen.png",
+                         product_Image5 = "image/phukien/phukien-coihuanluyen.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id3,
+                         product_Name = "Lamb Sticks",
+                         product_Description = "Lamb Sticks",
+                         product_Image1 = "image/phukien/phukien-thitcuuque.png",
+                         product_Image2 = "image/phukien/phukien-thitcuuque.png",
+                         product_Image3 = "image/phukien/phukien-thitcuuque.png",
+                         product_Image4 = "image/phukien/phukien-thitcuuque.png",
+                         product_Image5 = "image/phukien/phukien-thitcuuque.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id4,
+                         product_Name = "SmartHeart For Small Dogs",
+                         product_Description = "SmartHeart For Small Dogs",
+                         product_Image1 = "image/phukien/phukien-SmartHeart.png",
+                         product_Image2 = "image/phukien/phukien-SmartHeart.png",
+                         product_Image3 = "image/phukien/phukien-SmartHeart.png",
+                         product_Image4 = "image/phukien/phukien-SmartHeart.png",
+                         product_Image5 = "image/phukien/phukien-SmartHeart.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id5,
+                         product_Name = "Bonus Cake Tablet",
+                         product_Description = "Bonus Cake Tablet",
+                         product_Image1 = "image/phukien/phukien-banhthuong.png",
+                         product_Image2 = "image/phukien/phukien-banhthuong.png",
+                         product_Image3 = "image/phukien/phukien-banhthuong.png",
+                         product_Image4 = "image/phukien/phukien-banhthuong.png",
+                         product_Image5 = "image/phukien/phukien-banhthuong.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id6,
+                         product_Name = "Royal Canin For Adult Dogs",
+                         product_Description = "Royal Canin For Adult Dogs",
+                         product_Image1 = "image/phukien/phukien-royal_truongthanh.png",
+                         product_Image2 = "image/phukien/phukien-royal_truongthanh.png",
+                         product_Image3 = "image/phukien/phukien-royal_truongthanh.png",
+                         product_Image4 = "image/phukien/phukien-royal_truongthanh.png",
+                         product_Image5 = "image/phukien/phukien-royal_truongthanh.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id7,
+                         product_Name = "Pair of Bows",
+                         product_Description = "Pair of Bows",
+                         product_Image1 = "image/phukien/phukien-capno.png",
+                         product_Image2 = "image/phukien/phukien-capno.png",
+                         product_Image3 = "image/phukien/phukien-capno.png",
+                         product_Image4 = "image/phukien/phukien-capno.png",
+                         product_Image5 = "image/phukien/phukien-capno.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id8,
+                         product_Name = "Princess Lace Scarf",
+                         product_Description = "Princess Lace Scarf",
+                         product_Image1 = "image/phukien/phukien-khanren.png",
+                         product_Image2 = "image/phukien/phukien-khanren.png",
+                         product_Image3 = "image/phukien/phukien-khanren.png",
+                         product_Image4 = "image/phukien/phukien-khanren.png",
+                         product_Image5 = "image/phukien/phukien-khanren.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id9,
+                         product_Name = "Drugs of Calcium",
+                         product_Description = "Drugs of Calcium",
+                         product_Image1 = "image/phukien/phukien-thuoccanxi.png",
+                         product_Image2 = "image/phukien/phukien-thuoccanxi.png",
+                         product_Image3 = "image/phukien/phukien-thuoccanxi.png",
+                         product_Image4 = "image/phukien/phukien-thuoccanxi.png",
+                         product_Image5 = "image/phukien/phukien-thuoccanxi.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id10,
+                         product_Name = "Bow Bow Bra",
+                         product_Description = "Bow Bow Bra",
+                         product_Image1 = "image/phukien/phukien-aongucnochuong.png",
+                         product_Image2 = "image/phukien/phukien-aongucnochuong.png",
+                         product_Image3 = "image/phukien/phukien-aongucnochuong.png",
+                         product_Image4 = "image/phukien/phukien-aongucnochuong.png",
+                         product_Image5 = "image/phukien/phukien-aongucnochuong.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id11,
+                         product_Name = "Balloon Toys",
+                         product_Description = "Balloon Toys",
+                         product_Image1 = "image/phukien/phukien-bongbongdochoi.png",
+                         product_Image2 = "image/phukien/phukien-bongbongdochoi.png",
+                         product_Image3 = "image/phukien/phukien-bongbongdochoi.png",
+                         product_Image4 = "image/phukien/phukien-bongbongdochoi.png",
+                         product_Image5 = "image/phukien/phukien-bongbongdochoi.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id12,
+                         product_Name = "Dog Fence",
+                         product_Description = "Dog Fence",
+                         product_Image1 = "image/phukien/phukien-raoquaycho.png",
+                         product_Image2 = "image/phukien/phukien-raoquaycho.png",
+                         product_Image3 = "image/phukien/phukien-raoquaycho.png",
+                         product_Image4 = "image/phukien/phukien-raoquaycho.png",
+                         product_Image5 = "image/phukien/phukien-raoquaycho.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id13,
+                         product_Name = "BLOOM SEXY Fragrance Bath Oil",
+                         product_Description = "BLOOM SEXY Fragrance Bath Oil",
+                         product_Image1 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
+                         product_Image2 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
+                         product_Image3 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
+                         product_Image4 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
+                         product_Image5 = "image/phukien/phukien-dautamnuochoabloomsexy.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id14,
+                         product_Name = "Toys",
+                         product_Description = "Toys",
+                         product_Image1 = "image/phukien/phukien-dochoi.png",
+                         product_Image2 = "image/phukien/phukien-dochoi.png",
+                         product_Image3 = "image/phukien/phukien-dochoi.png",
+                         product_Image4 = "image/phukien/phukien-dochoi.png",
+                         product_Image5 = "image/phukien/phukien-dochoi.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id15,
+                         product_Name = "BLOOM SEXY Fragrance Bath Oil",
+                         product_Description = "BLOOM SEXY Fragrance Bath Oil",
+                         product_Image1 = "image/phukien/phukien-dautamFay.png",
+                         product_Image2 = "image/phukien/phukien-dautamFay.png",
+                         product_Image3 = "image/phukien/phukien-dautamFay.png",
+                         product_Image4 = "image/phukien/phukien-dautamFay.png",
+                         product_Image5 = "image/phukien/phukien-dautamFay.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id16,
+                         product_Name = "Anti-Tear Syrup",
+                         product_Description = "Anti-Tear Syrup",
+                         product_Image1 = "image/phukien/phukien-sirochongchaynuocmat.png",
+                         product_Image2 = "image/phukien/phukien-sirochongchaynuocmat.png",
+                         product_Image3 = "image/phukien/phukien-sirochongchaynuocmat.png",
+                         product_Image4 = "image/phukien/phukien-sirochongchaynuocmat.png",
+                         product_Image5 = "image/phukien/phukien-sirochongchaynuocmat.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id17,
+                         product_Name = "Lice Treatment Ring",
+                         product_Description = "Lice Treatment Ring",
+                         product_Image1 = "image/phukien/phukien-vongtriveran.png",
+                         product_Image2 = "image/phukien/phukien-vongtriveran.png",
+                         product_Image3 = "image/phukien/phukien-vongtriveran.png",
+                         product_Image4 = "image/phukien/phukien-vongtriveran.png",
+                         product_Image5 = "image/phukien/phukien-vongtriveran.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id18,
+                         product_Name = "HANTOC Lice Spray",
+                         product_Description = "HANTOC Lice Spray",
+                         product_Image1 = "image/phukien/phukien-xitveranHANTOC.png",
+                         product_Image2 = "image/phukien/phukien-xitveranHANTOC.png",
+                         product_Image3 = "image/phukien/phukien-xitveranHANTOC.png",
+                         product_Image4 = "image/phukien/phukien-xitveranHANTOC.png",
+                         product_Image5 = "image/phukien/phukien-xitveranHANTOC.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id19,
+                         product_Name = "Nutri-Nutrition Gel",
+                         product_Description = "Nutri-Nutrition Gel",
+                         product_Image1 = "image/phukien/phukien-gelddNutri.png",
+                         product_Image2 = "image/phukien/phukien-gelddNutri.png",
+                         product_Image3 = "image/phukien/phukien-gelddNutri.png",
+                         product_Image4 = "image/phukien/phukien-gelddNutri.png",
+                         product_Image5 = "image/phukien/phukien-gelddNutri.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id20,
+                         product_Name = "Bio Milk Powder For Dogs and Cats",
+                         product_Description = "Bio Milk Powder For Dogs and Cats",
+                         product_Image1 = "image/phukien/phukien-suabotchomeo.png",
+                         product_Image2 = "image/phukien/phukien-suabotchomeo.png",
+                         product_Image3 = "image/phukien/phukien-suabotchomeo.png",
+                         product_Image4 = "image/phukien/phukien-suabotchomeo.png",
+                         product_Image5 = "image/phukien/phukien-suabotchomeo.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id21,
+                         product_Name = "Sleeky Multivitamin",
+                         product_Description = "Sleeky Multivitamin",
+                         product_Image1 = "image/phukien/phukien-vitamintonghop.png",
+                         product_Image2 = "image/phukien/phukien-vitamintonghop.png",
+                         product_Image3 = "image/phukien/phukien-vitamintonghop.png",
+                         product_Image4 = "image/phukien/phukien-vitamintonghop.png",
+                         product_Image5 = "image/phukien/phukien-vitamintonghop.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id22,
+                         product_Name = "Canxi Nano",
+                         product_Description = "Canxi Nano",
+                         product_Image1 = "image/phukien/phukien-canxinano.png",
+                         product_Image2 = "image/phukien/phukien-canxinano.png",
+                         product_Image3 = "image/phukien/phukien-canxinano.png",
+                         product_Image4 = "image/phukien/phukien-canxinano.png",
+                         product_Image5 = "image/phukien/phukien-canxinano.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id23,
+                         product_Name = "Shipping Bag",
+                         product_Description = "Shipping Bag",
+                         product_Image1 = "image/phukien/phukien-tuivanchuyen.png",
+                         product_Image2 = "image/phukien/phukien-tuivanchuyen.png",
+                         product_Image3 = "image/phukien/phukien-tuivanchuyen.png",
+                         product_Image4 = "image/phukien/phukien-tuivanchuyen.png",
+                         product_Image5 = "image/phukien/phukien-tuivanchuyen.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id24,
+                         product_Name = "Food Toys",
+                         product_Description = "Food Toys",
+                         product_Image1 = "image/phukien/phukien-dochoithucan.png",
+                         product_Image2 = "image/phukien/phukien-dochoithucan.png",
+                         product_Image3 = "image/phukien/phukien-dochoithucan.png",
+                         product_Image4 = "image/phukien/phukien-dochoithucan.png",
+                         product_Image5 = "image/phukien/phukien-dochoithucan.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id25,
+                         product_Name = "Coat + Strap",
+                         product_Description = "Coat + Strap",
+                         product_Image1 = "image/phukien/phukien-ao_giaythat.png",
+                         product_Image2 = "image/phukien/phukien-ao_giaythat.png",
+                         product_Image3 = "image/phukien/phukien-ao_giaythat.png",
+                         product_Image4 = "image/phukien/phukien-ao_giaythat.png",
+                         product_Image5 = "image/phukien/phukien-ao_giaythat.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id26,
+                         product_Name = "Throwing dish",
+                         product_Description = "Throwing dish",
+                         product_Image1 = "image/phukien/phukien-dianem.png",
+                         product_Image2 = "image/phukien/phukien-dianem.png",
+                         product_Image3 = "image/phukien/phukien-dianem.png",
+                         product_Image4 = "image/phukien/phukien-dianem.png",
+                         product_Image5 = "image/phukien/phukien-dianem.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id27,
+                         product_Name = "Orb of Thorns",
+                         product_Description = "Orb of Thorns",
+                         product_Image1 = "image/phukien/phukien-quacaugai.png",
+                         product_Image2 = "image/phukien/phukien-quacaugai.png",
+                         product_Image3 = "image/phukien/phukien-quacaugai.png",
+                         product_Image4 = "image/phukien/phukien-quacaugai.png",
+                         product_Image5 = "image/phukien/phukien-quacaugai.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id28,
+                         product_Name = "Food Gun",
+                         product_Description = "Food Gun",
+                         product_Image1 = "image/phukien/phukien-sungbanthucan.png",
+                         product_Image2 = "image/phukien/phukien-sungbanthucan.png",
+                         product_Image3 = "image/phukien/phukien-sungbanthucan.png",
+                         product_Image4 = "image/phukien/phukien-sungbanthucan.png",
+                         product_Image5 = "image/phukien/phukien-sungbanthucan.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id29,
+                         product_Name = "Feather Brush",
+                         product_Description = "Feather Brush",
+                         product_Image1 = "image/phukien/phukien-banchaylong.png",
+                         product_Image2 = "image/phukien/phukien-banchaylong.png",
+                         product_Image3 = "image/phukien/phukien-banchaylong.png",
+                         product_Image4 = "image/phukien/phukien-banchaylong.png",
+                         product_Image5 = "image/phukien/phukien-banchaylong.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id30,
+                         product_Name = "Rooster Toys",
+                         product_Description = "Rooster Toys",
+                         product_Image1 = "image/phukien/phukien-dochoi_gatrong.png",
+                         product_Image2 = "image/phukien/phukien-dochoi_gatrong.png",
+                         product_Image3 = "image/phukien/phukien-dochoi_gatrong.png",
+                         product_Image4 = "image/phukien/phukien-dochoi_gatrong.png",
+                         product_Image5 = "image/phukien/phukien-dochoi_gatrong.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id31,
+                         product_Name = "Skin Bones",
+                         product_Description = "Skin Bones",
+                         product_Image1 = "image/phukien/phukien-xuongda.png",
+                         product_Image2 = "image/phukien/phukien-xuongda.png",
+                         product_Image3 = "image/phukien/phukien-xuongda.png",
+                         product_Image4 = "image/phukien/phukien-xuongda.png",
+                         product_Image5 = "image/phukien/phukien-xuongda.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id32,
+                         product_Name = "SmartHeart For Adult Dogs",
+                         product_Description = "SmartHeart For Adult Dogs",
+                         product_Image1 = "image/phukien/phukien-Smartheart_truongthanh.png",
+                         product_Image2 = "image/phukien/phukien-Smartheart_truongthanh.png",
+                         product_Image3 = "image/phukien/phukien-Smartheart_truongthanh.png",
+                         product_Image4 = "image/phukien/phukien-Smartheart_truongthanh.png",
+                         product_Image5 = "image/phukien/phukien-Smartheart_truongthanh.png",
+                         product_Price = 1000000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id33,
+                         product_Name = "Royal Canin For Small Dogs",
+                         product_Description = "Royal Canin For Small Dogs",
+                         product_Image1 = "image/phukien/phukien-roya_chonho.png",
+                         product_Image2 = "image/phukien/phukien-roya_chonho.png",
+                         product_Image3 = "image/phukien/phukien-roya_chonho.png",
+                         product_Image4 = "image/phukien/phukien-roya_chonho.png",
+                         product_Image5 = "image/phukien/phukien-roya_chonho.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id34,
+                         product_Name = "FAY Dry Bath Powder",
+                         product_Description = "FAY Dry Bath Powder",
+                         product_Image1 = "image/phukien/phukien-phantamkhoFay.png",
+                         product_Image2 = "image/phukien/phukien-phantamkhoFay.png",
+                         product_Image3 = "image/phukien/phukien-phantamkhoFay.png",
+                         product_Image4 = "image/phukien/phukien-phantamkhoFay.png",
+                         product_Image5 = "image/phukien/phukien-phantamkhoFay.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }, new Products()
+                     {
+                         product_Id = newProduct_Id35,
+                         product_Name = "Oliver Shower Gel",
+                         product_Description = "Oliver Shower Gel",
+                         product_Image1 = "image/phukien/phukien-suatamoliver.png",
+                         product_Image2 = "image/phukien/phukien-suatamoliver.png",
+                         product_Image3 = "image/phukien/phukien-suatamoliver.png",
+                         product_Image4 = "image/phukien/phukien-suatamoliver.png",
+                         product_Image5 = "image/phukien/phukien-suatamoliver.png",
+                         product_Price = 100000,
+                         product_Rate = 5,
+                         product_ReProducePrice = 0,
+                         product_CategoryId = newProc_Id1,
+                         product_IsDelete = false
+                     }
+                     );
 
             // Table Bills
 
@@ -1084,6 +1630,25 @@ namespace Database.Data
                 }
                 );
 
-        }
+
+            // Table Introduce Page
+            builder.Entity<IntroducePage>().HasData(
+                new IntroducePage()
+                {
+                    introduce_Id = "defaultPage",
+                    introduce_Zalo = "0812888858",
+                    introduce_Phone = "0812888858",
+                    introduce_Email = "petshop.cuahangthucung@gmail.com",
+                    introduce_Address1 = "180 Bui Van Ba, District 7, Ho Chi Minh City.",
+                    introduce_Address2 = "464 Cong Hoa, Tan Binh District, Ho Chi Minh City.",
+                    introduce_Address3 = "157/13 Luong The Vinh Street, Ward 1, Ca Mau City.",
+                    introduce_Map1 = "180 Bui Van Ba, District 7, Ho Chi Minh City .",
+                    introduce_Map2 = "464 Cong Hoa, Ward 13, Tan Binh District, City Ho Chi Minh.",
+                    introduce_Map3 = "157/13 Luong The Vinh Street, Ward 1, City Ca Mau.",
+                    introduce_UserCreate = newUser_Id1
+                }
+                );
+
+    }
     }
 }
