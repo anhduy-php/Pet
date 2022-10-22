@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Database.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Database.Data
 {
@@ -6,15 +9,83 @@ namespace Database.Data
     {
         public static void Seed(this ModelBuilder builder)
         {
-            ////Table About
-            //builder.Entity<About>().HasData(
-            //        new About()
-            //        {
-            //            about_id = 1,
-            //            about_Url = "https://www.youtube.com/watch?v=F1vcruph8JA",
-            //            about_Title = "Footwear the leading eCommerce Store around the Globe",
-            //            about_Description = "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. \n \n When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove,the headline of Alphabet Village and the subline of her own road,the Line Lane.Pityful a rethoric question ran over her cheek,then she continued her way."
-            //        });
+            string newPc_Id1 = Guid.NewGuid().ToString();
+            string newPc_Id2 = Guid.NewGuid().ToString();
+            string newPc_Id3 = Guid.NewGuid().ToString();
+            string newPc_Id4 = Guid.NewGuid().ToString();
+            string newPc_Id5 = Guid.NewGuid().ToString();
+
+            // Table Pet Categories
+            builder.Entity<PetCategories>().HasData(
+                new PetCategories()
+                {
+                    pc_Id = newPc_Id1,
+                    pc_Name = "Name",
+                    pc_Description = "Description",
+                    pc_IsDelete = false
+                }
+                );
+
+
+
+
+            ////Table Pets
+            builder.Entity<Pets>().HasData(
+                        new Pets()
+                        {
+                            pet_Id = Guid.NewGuid().ToString(),
+                            pet_Name = "Name",
+                            pet_Description = "Description",
+                            pet_Price = 1,
+                            pet_OrtherName = "OrtherName",
+                            pet_Origin = "Origin",
+                            pet_CategoryId = "CategoryId",
+                            pet_Weight = 3,
+                            pet_Lifespan = 1,
+                            pet_IsDelete = false
+                        });
+
+            // Table Roles
+            string newRole_Id1 = Guid.NewGuid().ToString();
+
+            builder.Entity<Roles>().HasData(
+                new Roles()
+                {
+                    Id = newRole_Id1,
+                    Name = "ADMIN",
+                    NormalizedName = "admin",
+                    isDelete = false
+                }
+                );
+
+
+            // Table Users
+            string newUser_Id1 = Guid.NewGuid().ToString();
+
+            builder.Entity<Users>().HasData(
+                new Users()
+                {
+                    Id = newUser_Id1,
+                    UserName = "Admin",
+                    PasswordHash = "123456",
+                    FirstName = "FirstName",
+                    LastName = "LastName",
+                    DoB = DateTime.Now,
+                    isDelete = false
+                }
+                );
+
+            //  Table User Role
+            builder.Entity<IdentityUserRole<string>>().HasData(
+           new IdentityUserRole<string>
+           {
+               RoleId = newRole_Id1,
+               UserId = newUser_Id1
+           });
+
+
+
+
         }
     }
 }
