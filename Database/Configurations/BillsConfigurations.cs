@@ -10,6 +10,10 @@ namespace Database.Configurations
         {
             builder.ToTable("Bills");
             builder.HasKey(t => new { t.bill_Id });
+
+
+            builder.HasOne(t => t.Users).WithMany(ur => ur.bills)
+            .HasForeignKey(pc => pc.bill_UserId);
         }
     }
 }

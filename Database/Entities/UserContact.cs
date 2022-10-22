@@ -7,7 +7,7 @@
         public string uc_Email { set; get; }
         public string uc_Content { set; get; }
         public string uc_Phone { set; get; }
-        public string uc_IsDelete { set; get; }
+        public bool uc_IsDelete { set; get; }
         public string uc_UserCreate { set; get; }
         public Users users { get; set; }
     }

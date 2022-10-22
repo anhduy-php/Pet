@@ -11,5 +11,6 @@ namespace Database.Entities
 
         public List<UserContact> userContact { get; set; }
         public List<IntroducePage> introducePage { get; set; }
+        public List<Bills> bills { get; set; }
     }
 }

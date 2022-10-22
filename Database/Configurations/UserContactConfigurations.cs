@@ -11,7 +11,6 @@ namespace Database.Configurations
             builder.ToTable("UserContact");
             builder.HasKey(t => new { t.uc_Id });
 
-
             builder.HasOne(t => t.users).WithMany(ur => ur.userContact)
             .HasForeignKey(pc => pc.uc_UserCreate);
         }

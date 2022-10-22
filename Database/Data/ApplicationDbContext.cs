@@ -48,7 +48,7 @@ namespace Database.Data
             builder.ApplyConfiguration(new UserContactConfigurations());
             builder.ApplyConfiguration(new UsersConfigurations());
 
-            //builder.Seed();
+            builder.Seed();
 
 
         }

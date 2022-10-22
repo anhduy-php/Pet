@@ -4,6 +4,7 @@ using Database.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221022061305_updatetable")]
+    partial class updatetable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,25 +46,11 @@ namespace Database.Migrations
 
                     b.Property<string>("bill_UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("bill_Id");
 
-                    b.HasIndex("bill_UserId");
-
                     b.ToTable("Bills", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            bill_Id = "bc8eee77-d226-4dbc-9c3c-575e45b4757e",
-                            bill_Cancel = false,
-                            bill_StartDateTime = new DateTime(2022, 10, 22, 13, 45, 50, 649, DateTimeKind.Local).AddTicks(9348),
-                            bill_StatusPayment = true,
-                            bill_StatusReviceOrder = false,
-                            bill_Total = 1.0,
-                            bill_UserId = "dc9c6d40-ada5-4b54-bf17-e7955fbe204b"
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.IntroducePage", b =>
@@ -136,15 +124,6 @@ namespace Database.Migrations
                     b.HasKey("pc_Id");
 
                     b.ToTable("PetCategories", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            pc_Id = "0beac127-fe68-4eb4-8536-d03663de191f",
-                            pc_Description = "Description",
-                            pc_IsDelete = false,
-                            pc_Name = "Name"
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Pets", b =>
@@ -189,21 +168,6 @@ namespace Database.Migrations
                     b.HasIndex("pet_CategoryId");
 
                     b.ToTable("Pets", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            pet_Id = "36360661-1c4b-474c-bcbf-66c16b42b357",
-                            pet_CategoryId = "0beac127-fe68-4eb4-8536-d03663de191f",
-                            pet_Description = "Description",
-                            pet_IsDelete = false,
-                            pet_Lifespan = 1.0,
-                            pet_Name = "Name",
-                            pet_Origin = "Origin",
-                            pet_OrtherName = "OrtherName",
-                            pet_Price = 1.0,
-                            pet_Weight = 3.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.PettInBill", b =>
@@ -228,16 +192,6 @@ namespace Database.Migrations
                     b.HasIndex("pib_BillId");
 
                     b.ToTable("PettInBill", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            pib_PetId = "36360661-1c4b-474c-bcbf-66c16b42b357",
-                            pib_BillId = "bc8eee77-d226-4dbc-9c3c-575e45b4757e",
-                            pib_IsDelete = false,
-                            pib_Price = 12.0,
-                            pib_Quantity = 1.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.ProductCategories", b =>
@@ -259,15 +213,6 @@ namespace Database.Migrations
                     b.HasKey("proc_Id");
 
                     b.ToTable("ProductCategories", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            proc_Id = "256df248-d68c-4bfe-beef-3530f7d0b65c",
-                            proc_Description = "Description",
-                            proc_IsDelete = false,
-                            proc_Name = "Name"
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.ProductInBill", b =>
@@ -292,16 +237,6 @@ namespace Database.Migrations
                     b.HasIndex("proib_BillId");
 
                     b.ToTable("ProductInBill", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            proib_ProductId = "63886122-64fe-4633-990c-b55ed47f7f57",
-                            proib_BillId = "bc8eee77-d226-4dbc-9c3c-575e45b4757e",
-                            proib_IsDelete = false,
-                            proib_Price = 12.0,
-                            proib_Quantity = 1.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Products", b =>
@@ -338,19 +273,6 @@ namespace Database.Migrations
                     b.HasIndex("product_CategoryId");
 
                     b.ToTable("Products", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            product_Id = "63886122-64fe-4633-990c-b55ed47f7f57",
-                            product_CategoryId = "256df248-d68c-4bfe-beef-3530f7d0b65c",
-                            product_Description = "Description",
-                            product_IsDelete = false,
-                            product_Name = "Name",
-                            product_Price = 1.0,
-                            product_Rate = 5.0,
-                            product_ReProducePrice = 0.0
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.UserContact", b =>
@@ -378,7 +300,6 @@ namespace Database.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("uc_UserCreate")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("uc_Id");
@@ -386,18 +307,6 @@ namespace Database.Migrations
                     b.HasIndex("uc_UserCreate");
 
                     b.ToTable("UserContact", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            uc_Id = "828bee48-2436-4574-ae27-cf75b61ccf8b",
-                            uc_Content = "Content",
-                            uc_Email = "Email",
-                            uc_IsDelete = false,
-                            uc_Name = "Name",
-                            uc_Phone = "Phone",
-                            uc_UserCreate = "dc9c6d40-ada5-4b54-bf17-e7955fbe204b"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -591,13 +500,6 @@ namespace Database.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("UserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "dc9c6d40-ada5-4b54-bf17-e7955fbe204b",
-                            RoleId = "ddc955b7-6138-47b1-aa53-bc7f25d26af6"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -635,17 +537,6 @@ namespace Database.Migrations
                     b.ToTable("Roles");
 
                     b.HasDiscriminator().HasValue("Roles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "ddc955b7-6138-47b1-aa53-bc7f25d26af6",
-                            ConcurrencyStamp = "84bb4977-b2ee-46cd-9913-0d972bef3091",
-                            Name = "ADMIN",
-                            NormalizedName = "admin",
-                            Description = "admin",
-                            isDelete = false
-                        });
                 });
 
             modelBuilder.Entity("Database.Entities.Users", b =>
@@ -669,39 +560,6 @@ namespace Database.Migrations
                     b.ToTable("Users");
 
                     b.HasDiscriminator().HasValue("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "dc9c6d40-ada5-4b54-bf17-e7955fbe204b",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "719393ce-a2eb-42c1-aafa-47a03abef9ee",
-                            Email = "staff@gmail.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "STAFF@GMAIL.COM",
-                            NormalizedUserName = "STAFF@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEI7EghdDpLC/NM2YZfGxLbCjb95sUI68/xlFLCWabTJjTavfqUufKkXMJTtzATo5WA==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "1132e8b5-2cb7-452d-a4d2-0ba8e912ce8e",
-                            TwoFactorEnabled = false,
-                            UserName = "Admin",
-                            DoB = new DateTime(2022, 10, 22, 13, 45, 50, 649, DateTimeKind.Local).AddTicks(9050),
-                            FirstName = "FirstName",
-                            LastName = "LastName",
-                            isDelete = false
-                        });
-                });
-
-            modelBuilder.Entity("Database.Entities.Bills", b =>
-                {
-                    b.HasOne("Database.Entities.Users", "Users")
-                        .WithMany("bills")
-                        .HasForeignKey("bill_UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("Database.Entities.IntroducePage", b =>
@@ -779,9 +637,7 @@ namespace Database.Migrations
                 {
                     b.HasOne("Database.Entities.Users", "users")
                         .WithMany("userContact")
-                        .HasForeignKey("uc_UserCreate")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("uc_UserCreate");
 
                     b.Navigation("users");
                 });
@@ -866,8 +722,6 @@ namespace Database.Migrations
 
             modelBuilder.Entity("Database.Entities.Users", b =>
                 {
-                    b.Navigation("bills");
-
                     b.Navigation("introducePage");
 
                     b.Navigation("userContact");
