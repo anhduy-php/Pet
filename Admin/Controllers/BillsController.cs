@@ -66,27 +66,6 @@ namespace Admin.Controllers
             return NotFound();
         }
 
-        // GET: BillsController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: BillsController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: BillsController/Edit/5
         [Route("/management/bills/edit")]
         public ActionResult Edit(string id)
@@ -115,10 +94,25 @@ namespace Admin.Controllers
         // POST: BillsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [Route("/management/bills/edit")]
+        public async Task<ActionResult> Edit(BillsDto billsDto)
         {
             try
             {
+                var bills = _context.bills.FirstOrDefault(x => x.bill_Id == billsDto.bill_Id);
+                if (bills is not null)
+                {
+                    bills.bill_Id = billsDto.bill_Id;
+                    bills.bill_UserId = billsDto.bill_UserId;
+                    bills.bill_StartDateTime = billsDto.bill_StartDateTime;
+                    bills.bill_StatusPayment = billsDto.bill_StatusPayment;
+                    bills.bill_Cancel = billsDto.bill_Cancel;
+                    bills.bill_Total = billsDto.bill_Total;
+                    bills.bill_StatusReviceOrder = billsDto.bill_StatusReviceOrder;
+
+                    var result = _context.bills.Update(bills);
+                    await _context.SaveChangesAsync();
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -132,7 +126,6 @@ namespace Admin.Controllers
         public ActionResult Delete(string id)
         {
             var bills = _context.bills.FirstOrDefault(x => x.bill_Id == id);
-
             if (bills is not null)
             {
                 var billsDto = new BillsDto()
@@ -146,7 +139,6 @@ namespace Admin.Controllers
                     bill_Cancel = bills.bill_Cancel,
                     bill_Total = bills.bill_Total
                 };
-
                 return View(billsDto);
             }
             return NotFound();
@@ -155,10 +147,16 @@ namespace Admin.Controllers
         // POST: BillsController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [Route("/management/bills/delete")]
+        public async Task<ActionResult> Delete(BillsDto billsDto)
         {
             try
             {
+                var bills = _context.bills.FirstOrDefault(x => x.bill_Id == billsDto.bill_Id);
+                if (bills is not null)
+                _context.bills.Remove(bills);
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
             catch

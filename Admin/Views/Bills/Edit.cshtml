@@ -66,6 +66,14 @@
                                     <input class="form-check-input" asp-for="bill_Cancel" /> @Html.DisplayNameFor(model => model.bill_Cancel)
                                 </td>
                             </tr>
+                            <tr hidden>
+                                <td>
+                                    <label asp-for="bill_UserId" class="control-label"></label>
+                                </td>
+                                <td>
+                                    <input asp-for="bill_UserId" class="form-control" />
+                                </td>
+                            </tr>
                             <tr>
                                 <td>
                                     <div class="form-group">
