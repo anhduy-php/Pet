@@ -18,8 +18,6 @@
         public double pet_Weight { get; set; }   
         public double pet_Lifespan { get; set; }   
         public bool pet_IsDelete { get; set; }
-
-
         public List<PettInBill> pettInBill { get; set; }
 
     }

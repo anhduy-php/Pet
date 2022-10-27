@@ -1,5 +1,7 @@
-﻿@{
+﻿@model IEnumerable<Design.Models.Dto.BillsDto>;
+@{
     ViewData["Title"] = "Home Page";
+    int iCount = 1;
 }
 <!-- Widgets Start -->
 <div class="container-fluid pt-4 px-4">
@@ -11,29 +13,40 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">UserName</th>
+                                <th scope="col">StatusPayment</th>
+                                <th scope="col">StatusReviceOrder</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">StartDateTime</th>
+                                <th scope="col">Cancel</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>twitter</td>
-                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">
+
+                                        @iCount
+                                        @{
+                                            iCount = iCount + 1;
+                                        }
+
+                                    </th>
+                                    <td>@item.bill_UserName</td>
+                                    <td>@item.bill_StatusPayment</td>
+                                    <td>@item.bill_StatusReviceOrder</td>
+                                    <td>@item.bill_Total</td>
+                                    <td>@item.bill_StartDateTime</td>
+                                    <td>@item.bill_Cancel</td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.bill_Id">Edit</a> |
+                                        <a asp-action="Details" asp-route-id="@item.bill_Id">Details</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.bill_Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>

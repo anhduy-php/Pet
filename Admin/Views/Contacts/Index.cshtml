@@ -1,5 +1,7 @@
-﻿@{
+﻿@model IEnumerable<Design.Models.Dto.ContactsDto>;
+@{
     ViewData["Title"] = "Home Page";
+    int iUserContact = 1;
 }
 <!-- Widgets Start -->
 <div class="container-fluid pt-4 px-4">
@@ -11,29 +13,38 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Content</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Delete</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>twitter</td>
-                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">
+
+                                        @iUserContact
+                                        @{
+                                            iUserContact = iUserContact + 1;
+                                        }
+
+                                    </th>
+                                    <td>@item.uc_Name</td>
+                                    <td>@item.uc_Email</td>
+                                    <td>@item.uc_Content</td>
+                                    <td>@item.uc_Phone</td>
+                                    <td>@item.uc_IsDelete</td>
+                                    
+                                    <td>
+                                        <a href="##">Edit</a>/
+                                        <a href="##">Delete</a>/
+                                        <a href="##">View</a>
+                                    </td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>

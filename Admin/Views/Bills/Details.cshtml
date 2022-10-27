@@ -1,0 +1,92 @@
+﻿@model Design.Models.Dto.BillsDto
+@{
+    ViewData["Title"] = "Bills";
+    int iCount = 1;
+}
+
+
+
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm col-md ">
+            <div class="h-100 bg-secondary rounded p-4">
+                <h3>Details</h3>
+                <div class="d-flex align-items-center pt-3">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="bill_Id" />
+                    <table>
+                        <tr>
+                            <td>
+                                <label asp-for="bill_UserName" class="control-label"></label>
+                            </td>
+                            <td>
+                                <input asp-for="bill_Total" class="form-control" readonly />
+                                <span asp-validation-for="bill_Total" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label asp-for="bill_StatusPayment" class="control-label"></label>
+                            </td>
+                            <td>
+                                <input class="form-check-input" asp-for="bill_StatusPayment" disabled /> @Html.DisplayNameFor(model => model.bill_StatusPayment)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label asp-for="bill_StatusReviceOrder" class="control-label"></label>
+                            </td>
+                            <td>
+                                <input class="form-check-input" asp-for="bill_StatusReviceOrder" disabled /> @Html.DisplayNameFor(model => model.bill_StatusReviceOrder)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label asp-for="bill_Total" class="control-label"></label>
+                            </td>
+                            <td>
+                                <input asp-for="bill_Total" class="form-control" readonly />
+                                <span asp-validation-for="bill_Total" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label asp-for="bill_StartDateTime" class="control-label"></label>
+                            </td>
+                            <td>
+                                <input asp-for="bill_StartDateTime" class="form-control" readonly />
+                                <span asp-validation-for="bill_StartDateTime" class="text-danger"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label asp-for="bill_Cancel" class="control-label"></label>
+                            </td>
+                            <td>
+                                <input class="form-check-input" asp-for="bill_Cancel" disabled /> @Html.DisplayNameFor(model => model.bill_Cancel)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@Model.bill_Id">Edit</a> |
+                            </td>
+                            <td>
+                                <div>
+                                    <a asp-action="Index">Back to List</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

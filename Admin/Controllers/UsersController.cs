@@ -1,15 +1,40 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Admin.Service;
+using Database.Data;
+using Design.Models.Dto;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Admin.Controllers
 {
     public class UsersController : Controller
     {
+        private ApplicationDbContext _context;
+
+       
+        public UsersController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: UserController
         [Route("/management/users")]
         public ActionResult Index()
         {
-            return View();
+            var users = _context.Users;
+
+            if (users is not null)
+            {
+                var userDto = users.Select(x => new UsersDto()
+                {
+                    Id = x.Id,
+                    FirstName = x.UserName,
+                    LastName = "",
+                    Email = x.Email,
+                    Phone = x.PhoneNumber
+                });
+                return View(userDto);
+            }
+            return NotFound();
         }
 
         // GET: UserController/Details/5

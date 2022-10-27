@@ -1,5 +1,8 @@
-﻿@{
+﻿@model IEnumerable< Design.Models.Dto.UsersDto>;
+
+@{
     ViewData["Title"] = "Home Page";
+    int iUser = 1;
 }
 <!-- Widgets Start -->
 <div class="container-fluid pt-4 px-4">
@@ -13,27 +16,34 @@
                                 <th scope="col">#</th>
                                 <th scope="col">First</th>
                                 <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>twitter</td>
-                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">
+
+                                        @iUser
+                                        @{
+                                            iUser = iUser + 1;
+                                        }
+                                        
+                                    </th>
+                                    <td>@item.FirstName</td>
+                                    <td>@item.LastName</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Phone</td>
+                                    <td>
+                                        <a href="##">Edit</a>/
+                                        <a href="##">Delete</a>/
+                                        <a href="##">View</a>
+                                    </td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>

@@ -13,6 +13,7 @@ namespace Design.Controllers
             _logger = logger;
         }
 
+        [Route("b")]
         public IActionResult Index()
         {
             return View();
